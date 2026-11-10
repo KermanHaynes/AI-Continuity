@@ -1,6 +1,8 @@
-# Install the operating contract in private memory
+# Install the software and instructions in private memory
 
 The recommended default is a **self-contained private installation**. A model connected only to your private repository can locate the same instructions and runtime regardless of which provider hosts the session. The public software repository and private memory repository remain separate; the latter contains an installed copy of the product plus your personal records.
+
+The **operating contract** is the instructions an agent must follow when reading or changing records. The **runtime** is the Python software that performs record operations and validation. A **self-contained installation** stores both alongside your personal records so later sessions can use the same version. [Start here](../START_HERE.md) explains those records; [QUICK_START.md](QUICK_START.md) covers dependencies and the initializer. The steps below are for the authorized setup agent or a user comfortable managing files and Git.
 
 ## Exact installation set
 
@@ -14,7 +16,7 @@ Do not overwrite existing CONTEXT, SOT, KNOWLEDGE, WORK or INDEX records. Do not
 
 ## Pin the installed version
 
-Save `.ai-continuity/INSTALLATION.json` with the source release/tag if available, source public distribution manifest SHA-256, installation time, complete installed program/guidance relative-path hashes, authoritative branch, and actual execution/capture capability configuration. Unknown release tags remain null; the manifest hash still identifies the exact installed bundle. Do not place credentials in this record.
+Record which software was installed so a later agent can verify it has the intended version. Save `.ai-continuity/INSTALLATION.json` with the source release/tag if available, source public distribution manifest SHA-256, installation time, complete installed program/guidance relative-path hashes, authoritative branch, and actual execution/capture capability configuration. Unknown release tags remain null; the manifest hash still identifies the exact installed bundle. Do not place credentials in this record.
 
 The agent commits and verifies this installation in the private repository within the user’s authority. It installs the declared dependencies in the environment actually used to execute commands. The runtime can then be invoked from the private repository root with `python -m memory.cli --root . OPERATION`; it no longer depends on an undisclosed original software checkout path.
 

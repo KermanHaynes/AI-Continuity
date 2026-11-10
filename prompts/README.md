@@ -1,5 +1,7 @@
 # Ready-to-copy operating prompts
 
+New here? [Start here](../START_HERE.md) explains the record names and setup choices. For new memory, begin with prompt 1; after setup, use prompts 5 and 6 to open and close ordinary sessions. Prompts 2–4 handle existing archives; prompt 7 revises an existing position.
+
 Fill the bracketed user-input fields with your repository, topic or request. These fields specify the operation’s inputs. The model follows the linked current operating procedures and the tools actually available in its environment.
 
 | Prompt | Use |
