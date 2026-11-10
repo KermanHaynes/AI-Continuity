@@ -2,7 +2,7 @@
 
 For guided setup without a command-line background, start with [USER_GUIDE.md](USER_GUIDE.md). The agent can perform these steps for you in an environment you authorize.
 
-For the record names and the session lifecycle, read [Start here](../START_HERE.md). This page is the command-line route: install, try fictional data, then create personal memory if you want to continue.
+For the three kinds of information you will keep and how a session works, read [Start here](../START_HERE.md). This page is the command-line route: install, try fictional data, then create personal memory if you want to continue.
 
 ## Install the software
 

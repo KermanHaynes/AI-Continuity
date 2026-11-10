@@ -6,15 +6,13 @@ Kerman Haynes is the Original Architect and Project Founder. AetherForge Labs, I
 
 ## Understand the three kinds of record
 
-A **repository** is a folder whose changes Git records over time; a **remote** is its hosted copy. AI-Continuity keeps three kinds of information separate inside your personal repository:
+Think of a project you return to after a break. You need three things:
 
-| Kind | What it means | Name you will see in files and instructions |
-| --- | --- | --- |
-| Original evidence | The actual conversations and available attachments, preserved unchanged with references to where they came from. A summary cannot replace them. | **SOT**, short for Source of Truth |
-| Reviewed knowledge | Your established position on a continuing topic, together with how it developed and the messages supporting it. A model suggestion remains a suggestion unless you approve it. | **KNOWLEDGE**; a topic is called a **subject** |
-| Work to resume | Tasks, status, next actions, unresolved questions and matters awaiting an external response. | **WORK** |
+- **Original conversations and other evidence:** what was actually said or supplied, kept unchanged so you can check it later.
+- **Reviewed knowledge and decisions:** what you have established, with the alternatives and reasons behind it. An AI suggestion remains a suggestion unless you approve it.
+- **Work to continue:** where you stopped, what to do next and what remains unresolved or awaits an outside response.
 
-Within a subject, **CURRENT** holds the reviewed position to use now, **EVOLUTION** retains earlier positions, alternatives and reasoning, and **SOURCES** points back to the original messages. **Provenance** means those origins and references; **lineage** means the retained chain of revisions. Earlier evidence and history remain available when a position changes.
+For example, if you change a design decision, the original discussion stays available, the reviewed position records the new choice and why it changed, and the work record tells the next session what to do. Earlier evidence and reasoning are retained.
 
 ## Choose your first step
 
@@ -34,6 +32,19 @@ You can ask an authorized AI agent to perform setup and Git commands if its envi
 5. **Resume:** in a later session, provide the same repository and topic. The agent reads current knowledge and work first, then follows relevant history and original messages as needed. This is **progressive retrieval**; it avoids rereading your entire archive for ordinary work.
 
 Reconstructing an old topic is different: the agent reads every available complete conversation in the agreed source scope and preserves each stage before moving from evolution to draft, approved final and current knowledge. See [historical onboarding](docs/ONBOARDING_HISTORY.md); progressive retrieval does not reduce that reading requirement.
+
+## Names you will see in files
+
+Once you know what the records are for, these names help you navigate them:
+
+| Name | Meaning |
+| --- | --- |
+| **SOT** (Source of Truth) | Preserved original conversations and available attachments, with exact source references. Summaries cannot replace them. |
+| **KNOWLEDGE** | Reviewed knowledge organized by continuing topic, called a **subject**. |
+| **CURRENT**, **EVOLUTION**, **SOURCES** | Within a subject: the reviewed position now, the retained history of alternatives/decisions/reasoning, and the links to original messages. |
+| **WORK** | Tasks, status and the information needed to resume them. |
+
+A **repository** is a folder whose changes Git records over time; a **remote** is its hosted copy. **Provenance** identifies where information came from, and **lineage** is the retained chain of revisions. You can consult this section when a detailed procedure uses these names.
 
 ## When you need the detailed instructions
 

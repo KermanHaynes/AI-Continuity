@@ -18,6 +18,16 @@ Use synthetic inputs and minimal reproductions. Include the relevant validation 
 
 Do not submit credentials, private conversations, customer material, personal records or material you lack permission to disclose. Identify third-party sources and their licenses. Review every contribution for correctness, provenance and the right to submit it.
 
+## Describe and record changes
+
+Use a short PR title and commit subject describing the resulting software or documentation improvement. In the description, explain the user-facing change, its reason, relevant feedback or evidence, preserved boundaries and checks actually run. Attribute feedback accurately without making a previous evaluation’s wording the title of an ordinary product update. Keep confidential reports and source records out of public submissions.
+
+Current user documentation explains the product and how to use it; technical references retain exact operating requirements. PRs and commits preserve change rationale and review history. Release notes summarize material shipped changes, compatibility and operating requirements; a small wording change does not need a separate release or new history document. Keep useful cross-references between these roles without requiring users to read development discussions to begin.
+
+Report reproducible checks with their exact revision, environment, commands and results. Distinguish implemented behavior, public test evidence, attributed operating reports and limits of verification; see [validation](docs/VALIDATION.md). A limitation of one test or environment is not evidence about every installation. Preserve historical measurements with their scope rather than presenting them as certification of later versions.
+
+Use a focused branch and PR, retain applicable CI and founder approval before merge, and keep the recorded history truthful. Do not rewrite published history to remove a prior rationale. Any use of the founder’s existing PR-only bypass requires explicit founder authorization for that specific merge; it does not authorize bypassing CI or history protections. Contributors receive no additional access through this guidance.
+
 ## Submission terms and credit
 
 Contributions intentionally submitted for inclusion are offered under Apache License 2.0 unless explicitly stated otherwise before submission. You must have the right to contribute the material under those terms. This contribution process does not assign your copyright to AetherForge Labs. A separate agreement is needed for an ownership transfer or different license terms.
