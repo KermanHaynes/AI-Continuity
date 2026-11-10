@@ -2,6 +2,8 @@
 
 AI-Continuity lets you continue meaningful work across AI sessions and models while preserving the evidence, reasoning and decisions behind the current position. Your personal memory belongs in a private repository. The public repository supplies the software, documentation and fictional examples.
 
+If this is your first visit, [Start here](../START_HERE.md) explains the record names and the full setup-to-resumption path. A **subject** is a continuing topic; **CURRENT** is its reviewed position, **EVOLUTION** its retained history and **SOURCES** its original-message references. **WORK** holds tasks and the information needed to resume them.
+
 ## Choose your starting point
 
 **No historical conversations:** follow [ONBOARDING_NEW.md](ONBOARDING_NEW.md). Establish a private memory repository and a faithful capture method before the first conversation.
@@ -13,12 +15,12 @@ An authorized agent can handle installation, files, Git and validation. You deci
 ## Normal daily use
 
 1. Copy the [opening prompt](../prompts/05-session-open.md), identifying your private repository, topic and working request.
-2. The agent reads current governing instructions, retrieves current knowledge and associated work, and activates the selected faithful capture process, including opening and maintaining the running file when that method is used.
+2. The agent checks the installed instructions, reads the topic’s current reviewed position and associated work, and confirms how the actual messages will be recorded. If using a running transcript, it opens and maintains that file now. This is faithful capture; a later summary does not replace the conversation.
 3. Work normally. The capture method preserves authentic dialogue as it occurs or through an available faithful export.
 4. Copy the [closeout prompt](../prompts/06-session-close.md).
-5. Review the proposed knowledge, decision, evolution and operational changes. Accept, correct, reject or defer individual items.
-6. The agent preserves evidence, applies approved changes, validates, commits, pushes and verifies the remote result, including the durable receipt.
-7. A later session or supported model uses the same repository to recover context.
+5. Review the proposed changes to your established position, its reasoning/history and associated tasks. Accept, correct, reject or defer individual items. The agent distinguishes your decisions from its suggestions and retains rejected or superseded alternatives and their reasons.
+6. The agent preserves the original evidence, applies only approved changes and validates the records. It commits evidence separately from derived changes, pushes to your approved private remote and verifies the remote history. It then separately commits/pushes and verifies the receipt: the record of what was actually completed. [Git operations](GIT_OPERATIONS.md) defines the exact sequence.
+7. In a later session or supported model, use the opening prompt with the same private repository and topic. The agent reads CURRENT and associated WORK first and reports the current position, next actions and unresolved matters. It follows EVOLUTION and SOURCES when more context is needed; setup is not repeated.
 
 If evidence or remote access is unavailable, the agent preserves completed independent work and identifies the exact unfinished step. It does not ask you to recreate a transcript from memory or claim a completed transaction without evidence.
 

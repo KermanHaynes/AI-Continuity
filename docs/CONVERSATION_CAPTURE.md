@@ -1,6 +1,6 @@
 # Faithful conversation capture
 
-A continuity session needs authentic conversational evidence. Select and activate the capture method at opening, maintain it during the session when applicable, and verify it before declaring source preservation complete. Summaries, remembered reconstructions and interpretive paraphrases are not SOT transcripts.
+**Capture** means keeping the actual messages and available attachments from your conversation, with information about where they came from. It lets you check a later interpretation against the original exchange. **SOT** means Source of Truth: that preserved evidence, distinct from reviewed knowledge. A continuity session needs authentic conversational evidence. Select and activate the capture method at opening, maintain it during the session when applicable, and verify it before declaring source preservation complete. Summaries, remembered reconstructions and interpretive paraphrases are not SOT transcripts.
 
 ## Choose a method based on actual access
 

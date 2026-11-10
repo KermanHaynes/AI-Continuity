@@ -45,7 +45,7 @@ You can also import historical conversations and reconstruct how a project or su
 
 ### Get started
 
-Choose the path that fits your situation.
+New to AI-Continuity? Read [Start here](START_HERE.md) for the record types, setup choices and first-session walkthrough. Then choose the path that fits your situation.
 
 **Starting fresh?** Set up AI-Continuity and begin preserving your work from your next conversation.
 

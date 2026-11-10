@@ -1,5 +1,7 @@
 # Operating procedures
 
+These are the detailed procedures for an agent carrying out an authorized operation. New users can first read [Start here](../../START_HERE.md) for the vocabulary and [the user guide](../USER_GUIDE.md#normal-daily-use) for the opening-to-resumption routine. Choose a procedure below for the task you are doing; this is a reference, not a checklist to run every procedure.
+
 Read [OPERATING_RULES.md](../OPERATING_RULES.md) for the operation-specific authority. Historical reconstruction is exhaustive; ordinary ongoing sessions are progressive. Source preservation is distinct from approved intellectual reconciliation.
 
 | Procedure | Operation |

@@ -1,16 +1,16 @@
 # Path B — start with existing conversations
 
-This path uses your available historical conversations to establish durable continuity. The software is already implemented; reconstruction is an operation performed with it. Processing a large archive can require substantial time and tokens. Preserve each expensive stage so that later drafting or review interruptions do not require repeated reading.
+Use this path when you want future sessions to draw on conversations you already have. [Start here](../START_HERE.md#understand-the-three-kinds-of-record) explains the record names. **Historical reconstruction** means reading the complete agreed source scope to establish how a topic developed, then reviewing what becomes current knowledge. Processing a large archive can require substantial time and tokens. Preserve each expensive stage so that later drafting or review interruptions do not require repeated reading.
 
 ## 1. Set up the private memory repository
 
-Complete the repository, installation and access steps in [Path A](ONBOARDING_NEW.md). Keep the software distribution, private memory data and local archive intake separate. Use the real initializer and commands in [QUICK_START.md](QUICK_START.md).
+Complete steps 1–3 of [Path A](ONBOARDING_NEW.md): private repository, software/instruction installation, access and capture arrangements. Return here before beginning a new-topic session; the next step is to preserve your existing archives. Keep the software distribution, private memory data and local archive intake separate. Use the real initializer and commands in [QUICK_START.md](QUICK_START.md).
 
 ## 2. Obtain and preserve authentic archives
 
 Obtain available exports or session records from each provider you want included. Provider access and export features vary; establish what can actually be downloaded or read. Keep original downloaded packages unchanged. Record provider, source format, available native identities, original times, capture scope, hashes and any known gaps.
 
-Use the [archive-import prompt](../prompts/02-import-history.md) and [HISTORY_IMPORT.md](HISTORY_IMPORT.md). Preserve native originals in the existing SOT hierarchy, normalize faithful dialogue through the supported adapter/mapping, and verify integrity and chronology. Importing evidence does not approve its intellectual interpretation or create accepted knowledge.
+Use the [archive-import prompt](../prompts/02-import-history.md) and [HISTORY_IMPORT.md](HISTORY_IMPORT.md). Preserve the unchanged original exports in **SOT** (Source of Truth). Use the supported adapter/mapping to make faithful readable dialogue with exact references to those originals; this is **normalization**, not summarization. Verify integrity and chronology. Importing evidence does not approve its intellectual interpretation or create accepted knowledge.
 
 ## 3. Define a reconstruction
 
