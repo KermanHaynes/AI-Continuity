@@ -39,7 +39,9 @@ Your original conversations are preserved. As your work develops, current knowle
 
 When you begin another session, your AI reads the relevant information and continues from the established state. If more history is needed, it can follow the references back to the original material.
 
-You can also import historical conversations and reconstruct how a project or subject evolved before continuing your work.
+You can also import historical conversations and reconstruct how a project or subject evolved before continuing your work. Historical reconstruction reads the agreed archive scope completely to establish reviewed knowledge. Continuing sessions use that knowledge and unfinished work, following the relevant history and original evidence when needed.
+
+See [operational evidence and scope](docs/VALIDATION.md#capabilities-use-and-evidence) for what is implemented, what you can reproduce publicly and what is reported from private use.
 
 **One history. Multiple conversations. Different AI models. Continuous work.**
 

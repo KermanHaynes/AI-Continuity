@@ -26,7 +26,7 @@ A running transcript must contain the actual messages in order and their availab
 
 Use the [opening prompt](../prompts/05-session-open.md). In a blank repository, the agent identifies the topic and reports that no established knowledge exists yet rather than inventing a position. Work normally while preserving authentic dialogue.
 
-At closeout, the agent examines the full session and proposes meaningful developments, decisions, alternatives, unresolved questions and related work. You approve the content before it becomes established knowledge. A subject is created only for a material continuing topic. Its CURRENT file holds the reviewed position, EVOLUTION retains how it developed and SOURCES links it to original messages. Rejected or deferred alternatives and their reasoning remain available.
+At closeout, the agent examines the full session and proposes meaningful developments, decisions, alternatives, unresolved questions and related work. You approve the content before it becomes established knowledge. A subject is created only for a material continuing topic. The topic keeps its reviewed position, the history of how it developed and references to original messages. These are stored as CURRENT, EVOLUTION and SOURCES; see [the file-name guide](../START_HERE.md#names-you-will-see-in-files). Rejected or deferred alternatives and their reasoning remain available.
 
 ## 5. Verify and resume
 
