@@ -1,0 +1,20 @@
+schema_version: 1
+records:
+- id: 4184f926-a5e8-41ad-9a90-c617c2ee7752
+  record_type: work_item
+  path: WORK/ITEMS/work_4184f926-a5e8-41ad-9a90-c617c2ee7752.md
+- id: 58747067-d20a-466e-8d92-15059871522f
+  record_type: sot_export
+  path: SOT/EXPORTS/58747067-d20a-466e-8d92-15059871522f/export.yaml
+- id: 751a9b6b-a0b6-4bcd-9946-50bc96b162e7
+  record_type: sot_export
+  path: SOT/EXPORTS/751a9b6b-a0b6-4bcd-9946-50bc96b162e7/export.yaml
+- id: ab892e5b-d07c-4f40-b43e-3197e97a5595
+  record_type: sot_conversation
+  path: SOT/fictional/synthetic/2026/ab892e5b-d07c-4f40-b43e-3197e97a5595/manifest.yaml
+- id: c2b4a597-81e9-416d-92a2-1296f4eed493
+  record_type: sot_conversation
+  path: SOT/fictional/synthetic/2026/c2b4a597-81e9-416d-92a2-1296f4eed493/manifest.yaml
+- id: c381204c-cac2-44a8-a72b-84f309fffbf9
+  record_type: knowledge_subject
+  path: KNOWLEDGE/lantern/subject.yaml

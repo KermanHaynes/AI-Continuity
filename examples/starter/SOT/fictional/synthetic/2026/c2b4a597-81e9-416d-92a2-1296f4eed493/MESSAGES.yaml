@@ -1,0 +1,37 @@
+record_type: message_index
+schema_version: 1
+sot_id: c2b4a597-81e9-416d-92a2-1296f4eed493
+messages:
+- message_id: f09674d7-5a51-4d8a-9606-493ab88e4f5d
+  native_message_id: 1-0
+  ordinal: 1
+  role: user
+  original_timestamp: null
+  export_id: 751a9b6b-a0b6-4bcd-9946-50bc96b162e7
+  source_locator: messages[0]
+  content_sha256: 517a659a0d21aa7ef5254bb9322116adf33aefa98c2c26c292dce039eeb1350f
+  anchor: msg-f09674d7-5a51-4d8a-9606-493ab88e4f5d
+  attachment_ids: []
+  limitations: []
+- message_id: 875e5c49-ecdf-4120-bd10-8322c590314b
+  native_message_id: 1-1
+  ordinal: 2
+  role: assistant
+  original_timestamp: null
+  export_id: 751a9b6b-a0b6-4bcd-9946-50bc96b162e7
+  source_locator: messages[1]
+  content_sha256: e1fc49ce68bff9385483f42f6b9010ab24dce1381d1d993febbfc3d41ae19e9c
+  anchor: msg-875e5c49-ecdf-4120-bd10-8322c590314b
+  attachment_ids: []
+  limitations: []
+- message_id: 04ddd721-b3ab-4c92-99b3-5acc291cd2ab
+  native_message_id: 1-2
+  ordinal: 3
+  role: user
+  original_timestamp: null
+  export_id: 751a9b6b-a0b6-4bcd-9946-50bc96b162e7
+  source_locator: messages[2]
+  content_sha256: 301b6b851d0272d3b5f52c153f58ea8b24936faaafb465c90141a17861e108dd
+  anchor: msg-04ddd721-b3ab-4c92-99b3-5acc291cd2ab
+  attachment_ids: []
+  limitations: []

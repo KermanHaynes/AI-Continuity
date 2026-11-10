@@ -1,0 +1,11 @@
+# Implemented provider interfaces
+
+The generic `register-sot` interface accepts operator-supplied normalized JSON and preserves genuine native identifiers and explicit source locators; it is not a native parser. Native archive interfaces additionally exist in memory.archive_inventory, archive_batch, archive_import, native_dialogue, openai_archive and grok_archive.
+
+`archive-inventory CORPUS DESTINATION` expects CORPUS/ORIGINALS and CORPUS/METADATA/sources.json. Inspect memory.archive_inventory.inventory for the source catalog contract. `archive-batch sources CORPUS INVENTORY` preserves eligible original sources; `archive-batch dialogue CORPUS INVENTORY` creates faithful native dialogue records with checkpoints. These operations require the operator's actual supported source files and catalog. Nothing in the distribution grants access to a provider account or supplies private archives. Use `--help` for positional arguments; inventory, conflicts, local-only publication blockers and capture gaps remain explicit.
+
+Implemented adapters cover Claude/Codex native streams and supported web capture representations, OpenAI ChatGPT mapping graphs and group exports, and Grok backend conversation/response graphs. Native non-dialogue material stays in original evidence; internal reasoning/tool payloads are excluded from conversational dialogue according to the implemented typed boundary rules. Literal user text is preserved. Unresolved parents, unknown original timestamps, ambiguous flattened captures and source-specific limitations remain explicit. Unsupported source shapes must be reviewed rather than treated as successful capture.
+
+`verify-archive-fidelity` independently compares registered native dialogue against original source extraction. `archive-reconcile-order` rebuilds archive navigation/order. These commands concern archive metadata, not automatic intellectual interpretation or promotion of CURRENT. Synthetic native adapter fixtures are in tests/test_archive.py, test_openai_archive.py and test_grok_archive.py.
+
+Live capture from a running provider, authentication, attachment downloading and model-to-model access require independently available external tooling and authorization. Configure those tools for the chosen environment before a live operation.

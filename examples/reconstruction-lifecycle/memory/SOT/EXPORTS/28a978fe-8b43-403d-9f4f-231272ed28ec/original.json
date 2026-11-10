@@ -1,0 +1,33 @@
+{
+  "synthetic": true,
+  "native_conversation_id": "fictional-c3",
+  "title": "Cedar fault review",
+  "original_started_at": "2026-01-05T14:00:00Z",
+  "original_ended_at": "2026-01-05T14:05:00Z",
+  "messages": [
+    {
+      "native_message_id": "fictional-c3-1",
+      "role": "user",
+      "original_timestamp": "2026-01-05T14:00:00Z",
+      "content": "In this fictional trial, a missing sensor reading could be handled by the timer fallback instead of an undefined response.",
+      "source_locator": "messages[0]",
+      "attachment_ids": []
+    },
+    {
+      "native_message_id": "fictional-c3-2",
+      "role": "assistant",
+      "original_timestamp": "2026-01-05T14:02:00Z",
+      "content": "That preserves the reason for predictability while allowing valid readings to adjust watering. An adaptive forecast schedule could be explored separately.",
+      "source_locator": "messages[1]",
+      "attachment_ids": []
+    },
+    {
+      "native_message_id": "fictional-c3-3",
+      "role": "user",
+      "original_timestamp": "2026-01-05T14:05:00Z",
+      "content": "Adopt sensor control with the fixed-timer fallback. It addresses rain and missing readings while preserving predictable fault behavior. Supersede timer-only operation, keep sensor-only rejected, and leave adaptive forecast scheduling deferred.",
+      "source_locator": "messages[2]",
+      "attachment_ids": []
+    }
+  ]
+}

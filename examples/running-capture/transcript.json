@@ -1,0 +1,16 @@
+{
+  "synthetic": true,
+  "capture_kind": "running_transcript",
+  "session_id": "fictional-capture-001",
+  "provider": "fictional",
+  "environment": "synthetic",
+  "capture_started_at": "2026-01-06T10:00:00Z",
+  "capture_cutoff_at": "2026-01-06T10:02:00Z",
+  "timestamp_policy": "record available timestamps; null means unavailable",
+  "messages": [
+    {"ordinal": 1, "speaker": "user", "content": "Keep the rejected sensor-only option in the history.", "timestamp": "2026-01-06T10:00:00Z", "native_message_id": null, "source_locator": "messages[0]", "attachments": [], "generated_outputs": []},
+    {"ordinal": 2, "speaker": "assistant", "content": "I will preserve its original reasoning and distinguish it from the accepted sensor with timer fallback.", "timestamp": null, "native_message_id": null, "source_locator": "messages[1]", "attachments": [], "generated_outputs": []}
+  ],
+  "gaps": [],
+  "coverage": {"accessible_message_count": 2, "captured_message_count": 2, "verified_through_ordinal": 2, "verification_method": "comparison with the complete authored fictional message fixture"}
+}

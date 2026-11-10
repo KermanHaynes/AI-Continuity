@@ -1,0 +1,25 @@
+{
+  "synthetic": true,
+  "run_id": "8a23eb37-2808-4e0c-96b5-3ba77be2e049",
+  "subject_id": "3818f1f1-ff07-42a6-8eca-577bbcecf21d",
+  "topic": "Cedar courtyard irrigation",
+  "depth": "standard",
+  "historical_start": "2026-01-02",
+  "historical_end": "2026-01-05",
+  "providers": [
+    "fictional"
+  ],
+  "source_scope": "three authored conversations including full boundary-spanning and unrelated-title dialogue",
+  "census_version": 1,
+  "conversation_ids": [
+    "a2a795e4-8458-4fe1-a9d7-e6541a1ceb30",
+    "fbffa9c3-4121-4c9b-b74d-745ffdf5af3d",
+    "d55383ea-9b9c-418b-89eb-8abdb1903ca8"
+  ],
+  "excluded_from_historical_window": [
+    {
+      "sot_id": "6944f5cd-1087-4f5d-8637-c68dd537a511",
+      "reason": "later fictional review/approval, retained as separate evidence"
+    }
+  ]
+}

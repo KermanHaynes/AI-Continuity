@@ -1,0 +1,24 @@
+{
+  "native_conversation_id": "fictional-lantern-1",
+  "title": "Fictional lantern revision 1",
+  "messages": [
+    {
+      "native_message_id": "1-0",
+      "role": "user",
+      "content": "Consider a fixed timer and a sensor for the fictional lantern.",
+      "source_locator": "messages[0]"
+    },
+    {
+      "native_message_id": "1-1",
+      "role": "assistant",
+      "content": "A sensor might adapt to changing light; a timer is simpler.",
+      "source_locator": "messages[1]"
+    },
+    {
+      "native_message_id": "1-2",
+      "role": "user",
+      "content": "Choose the fixed timer initially because its operation is predictable. Reject sensor-only control until its failure behavior is reviewed.",
+      "source_locator": "messages[2]"
+    }
+  ]
+}

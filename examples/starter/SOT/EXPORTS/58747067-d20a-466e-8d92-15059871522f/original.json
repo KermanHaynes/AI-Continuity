@@ -1,0 +1,24 @@
+{
+  "native_conversation_id": "fictional-lantern-2",
+  "title": "Fictional lantern revision 2",
+  "messages": [
+    {
+      "native_message_id": "2-0",
+      "role": "user",
+      "content": "Revise the decision: use a sensor with a timer fallback because the fallback preserves predictable operation. The timer-only decision is superseded.",
+      "source_locator": "messages[0]"
+    },
+    {
+      "native_message_id": "2-1",
+      "role": "assistant",
+      "content": "A future adaptive schedule is another possible approach.",
+      "source_locator": "messages[1]"
+    },
+    {
+      "native_message_id": "2-2",
+      "role": "user",
+      "content": "Keep the adaptive schedule unresolved. Start documenting the fallback procedure.",
+      "source_locator": "messages[2]"
+    }
+  ]
+}

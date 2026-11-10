@@ -1,0 +1,32 @@
+record_type: topic_map
+schema_version: 1
+sot_id: a2a795e4-8458-4fe1-a9d7-e6541a1ceb30
+topics:
+- topic_id: b0a5e3d9-f946-466a-8f43-dbe7d598ce83
+  label: Cedar courtyard irrigation
+  provisional: false
+  message_ids:
+  - 5e614a88-602e-4f09-ba69-8c6fb05ed3f4
+  - 5390b3af-8d52-428a-9af2-31976e56d625
+  - c55b1699-71e1-4232-b514-d3c0aac2455c
+  subject_ids:
+  - 3818f1f1-ff07-42a6-8eca-577bbcecf21d
+  decisions_stated:
+  - Use the fixed timer initially because its behavior is predictable. Defer a sensor
+    with fallback until we examine faults. Reject sensor-only operation without a
+    failure plan.
+  revisions: []
+  open_questions: []
+  experiments_and_results: []
+  artifact_ids: []
+- topic_id: fa4d2fdf-466f-4328-b2e6-45745de1748e
+  label: Errands
+  provisional: true
+  message_ids:
+  - 5e614a88-602e-4f09-ba69-8c6fb05ed3f4
+  subject_ids: []
+  decisions_stated: []
+  revisions: []
+  open_questions: []
+  experiments_and_results: []
+  artifact_ids: []

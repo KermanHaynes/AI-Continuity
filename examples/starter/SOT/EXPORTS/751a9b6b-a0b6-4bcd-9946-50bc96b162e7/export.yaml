@@ -1,0 +1,13 @@
+record_type: sot_export
+schema_version: 1
+export_id: 751a9b6b-a0b6-4bcd-9946-50bc96b162e7
+provider: fictional
+environment: synthetic
+native_export_id: null
+source_files:
+- path: SOT/EXPORTS/751a9b6b-a0b6-4bcd-9946-50bc96b162e7/original.json
+  sha256: abd4f2106367644b19d69d9ace72a9c2891a90e228dd91d5d157916a8ab62178
+captured_at: '2026-11-09T16:31:27.343364+00:00'
+capture_completeness: complete
+capture_scope: Complete fictional example authored for this demonstration
+previous_export_ids: []

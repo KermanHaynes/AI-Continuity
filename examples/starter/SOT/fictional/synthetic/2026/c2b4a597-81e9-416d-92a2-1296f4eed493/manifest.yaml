@@ -1,0 +1,51 @@
+record_type: sot_conversation
+schema_version: 1
+sot_id: c2b4a597-81e9-416d-92a2-1296f4eed493
+provider: fictional
+environment: synthetic
+native_conversation_id: fictional-lantern-1
+fingerprint: 4d10f8ec8568e4c208f9a49c68573e56d7862cb126fd49ad7db5b3b125a36433
+source_conversation_locator: null
+title: Fictional lantern revision 1
+export_ids:
+- 751a9b6b-a0b6-4bcd-9946-50bc96b162e7
+source_files:
+- path: SOT/EXPORTS/751a9b6b-a0b6-4bcd-9946-50bc96b162e7/original.json
+  sha256: abd4f2106367644b19d69d9ace72a9c2891a90e228dd91d5d157916a8ab62178
+transcript_file: transcript.md
+message_index_file: MESSAGES.yaml
+topic_map_file: TOPIC_MAP.yaml
+topic_map_markdown_file: TOPIC_MAP.md
+timestamps:
+  original_started_at: null
+  original_ended_at: null
+  imported_at: '2026-11-09T16:31:27.688406+00:00'
+attachment_inventory:
+  expected_logical_attachments: 0
+  inventory_verification: verified
+  inventory_evidence:
+  - 'export 751a9b6b-a0b6-4bcd-9946-50bc96b162e7: fictional source has no attachments'
+  registered_logical_attachment_ids: []
+counts:
+  total_messages: 3
+  role_totals:
+    user: 2
+    assistant: 1
+  user_turns: 2
+  attachments: 0
+  topics: null
+states:
+  source_preservation: complete
+  native_completeness: pending
+  normalization: complete
+  attachment_preservation: not_applicable
+  topic_indexing: pending
+  knowledge_reconciliation: pending
+  work_reconciliation: pending
+state_reasons:
+  attachment_preservation: 'Verified source inventory contains zero attachments: export
+    751a9b6b-a0b6-4bcd-9946-50bc96b162e7: fictional source has no attachments'
+integrated_subject_ids: []
+integrated_work_item_ids: []
+capture_gaps: []
+last_processed_at: '2026-11-09T16:31:27.688517+00:00'

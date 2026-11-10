@@ -1,0 +1,9 @@
+# New-user initialization prompt
+
+Set up AI-Continuity for my private memory repository: [repository address or request to create one]. Use [local data-root path or ask me for it], with main as the authoritative integrated branch unless I specify another.
+
+Read the distribution’s current START_HERE, AGENTS, docs/OPERATING_RULES.md, docs/ONBOARDING_NEW.md and docs/CONVERSATION_CAPTURE.md. Use the existing implementation and actual tools/initialize.py interface. Verify privacy, permissions, software/data-root separation, canonical initialization and actual remote state. Handle the available installation and Git mechanics for me within my authorization; ask only for access, missing destinations or decisions you actually need. Do not overwrite an existing repository or push personal data to the public project.
+
+Before meaningful work begins, establish and confirm how this environment will preserve faithful complete conversational evidence from the first session: native record, faithful export or verifiable running transcript. Record access, scope, attachment handling and gaps. Do not substitute a summary or invent native IDs/timestamps. Arrange a user-assisted faithful record if necessary.
+
+Install the exact self-contained program/guidance set in docs/INSTRUCTION_INSTALLATION.md into my private repository, including root AGENTS.md and START_HERE.md. Pin the installed version/manifest and file hashes in .ai-continuity/INSTALLATION.json, configure the actual execution environment and verify a private-repository-only session can locate instructions and operate the installed runtime. Do not invent personal preferences or accepted knowledge. Confirm readiness and any precise unresolved access/capture step, then help me begin [first topic or working request]. Preserve proposals and source evidence separately from accepted decisions; obtain my approval before establishing intellectual changes.

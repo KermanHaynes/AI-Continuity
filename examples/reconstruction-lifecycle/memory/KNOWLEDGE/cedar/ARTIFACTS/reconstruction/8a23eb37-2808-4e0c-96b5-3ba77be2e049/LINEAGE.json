@@ -1,0 +1,192 @@
+{
+  "synthetic": true,
+  "run_id": "8a23eb37-2808-4e0c-96b5-3ba77be2e049",
+  "subject_id": "3818f1f1-ff07-42a6-8eca-577bbcecf21d",
+  "state": "current_established_for_authored_fixture",
+  "scope_version": 1,
+  "source_census": [
+    "a2a795e4-8458-4fe1-a9d7-e6541a1ceb30",
+    "fbffa9c3-4121-4c9b-b74d-745ffdf5af3d",
+    "d55383ea-9b9c-418b-89eb-8abdb1903ca8"
+  ],
+  "stage_order": [
+    "scope_and_coverage_saved",
+    "complete_evolution_saved",
+    "draft_saved",
+    "fictional_review_correction",
+    "approved_final_saved",
+    "concise_current_saved"
+  ],
+  "artifacts": [
+    {
+      "name": "SCOPE.json",
+      "path": "SCOPE.json",
+      "sha256": "1b30f4d706ea2bd5c2621c6695fb4290d30b817174ca192025766805518f4600",
+      "parent": null,
+      "saved_at": "2026-11-09T20:05:22.210722+00:00",
+      "source_scope_version": 1
+    },
+    {
+      "name": "COVERAGE.json",
+      "path": "COVERAGE.json",
+      "sha256": "19f15ac46109dc2c43321a1cd233a3afbcebacadd8be4e4b9a83fe046e176a2c",
+      "parent": "SCOPE.json",
+      "saved_at": "2026-11-09T20:05:22.210910+00:00",
+      "source_scope_version": 1
+    },
+    {
+      "name": "WORKING_NOTES.md",
+      "path": "WORKING_NOTES.md",
+      "sha256": "bfa99ca7d5add7c63933565a8474e0087532e599e57a0745f239cbf49e7a907f",
+      "parent": "COVERAGE.json",
+      "saved_at": "2026-11-09T20:06:58.543822+00:00",
+      "source_scope_version": 1
+    },
+    {
+      "name": "EVOLUTION_RECORD_v001.md",
+      "path": "EVOLUTION_RECORD_v001.md",
+      "sha256": "1204edc0e906f68deb26f790bf521e7aeee3fbe2b3e2a1dbba0243f9e8778b29",
+      "parent": "COVERAGE.json",
+      "saved_at": "2026-11-09T20:06:58.544298+00:00",
+      "source_scope_version": 1
+    },
+    {
+      "name": "DRAFT_v001.md",
+      "path": "DRAFT_v001.md",
+      "sha256": "5c383aa948f9b72f115b6f99dcebc57a09493f4fa8e13cad81ff17d69f1c19d8",
+      "parent": "EVOLUTION_RECORD_v001.md",
+      "saved_at": "2026-11-09T20:06:58.543968+00:00",
+      "source_scope_version": 1
+    },
+    {
+      "name": "FINAL_v001.md",
+      "path": "FINAL_v001.md",
+      "sha256": "4ece1fcc79e231d93949dfa1d895d780a14871fb62832aaf196092eb6040e8bd",
+      "parent": "DRAFT_v001.md",
+      "saved_at": "2026-11-09T20:06:58.544142+00:00",
+      "source_scope_version": 1
+    },
+    {
+      "name": "CURRENT_SELECTION.json",
+      "path": "CURRENT_SELECTION.json",
+      "sha256": "645cef8dec6d7574387bcd481c773fc07c9065c60590ec44ea4bbd3bfe28e2d9",
+      "parent": "FINAL_v001.md",
+      "saved_at": "2026-11-09T20:05:22.212682+00:00",
+      "source_scope_version": 1
+    }
+  ],
+  "approval": {
+    "kind": "authored_fictional_user",
+    "at": "2026-01-06T10:04:00Z",
+    "sot_id": "6944f5cd-1087-4f5d-8637-c68dd537a511",
+    "message_id": "a5eeb8eb-daac-4d4f-95f8-3db17f038ab0",
+    "correction_message_id": "f4ab102e-ad25-4b23-b59d-5a9a1befb578"
+  },
+  "canonical_current": {
+    "path": "KNOWLEDGE/cedar/CURRENT.md",
+    "sha256": "368151bd99ef18f95aa38a498d87b3766b2185deaa436f7a1ebf60a54994ebba"
+  },
+  "git": {
+    "remote_publication_performed": false,
+    "verified_remote_commit": null,
+    "receipt": null,
+    "note": "Use the documented private-repository Git transaction to publish approved records and verify the actual completion receipt."
+  },
+  "processing_scope": {
+    "knowledge_subject_id": "3818f1f1-ff07-42a6-8eca-577bbcecf21d",
+    "knowledge_reconciliation": "complete_for_approved_cedar_scope",
+    "source_manifests": [
+      {
+        "sot_id": "a2a795e4-8458-4fe1-a9d7-e6541a1ceb30",
+        "states": {
+          "source_preservation": "complete",
+          "native_completeness": "complete",
+          "normalization": "complete",
+          "attachment_preservation": "complete",
+          "topic_indexing": "complete",
+          "knowledge_reconciliation": "complete",
+          "work_reconciliation": "not_applicable"
+        },
+        "review_status": "reviewed",
+        "approved_message_ids": [
+          "5e614a88-602e-4f09-ba69-8c6fb05ed3f4",
+          "5390b3af-8d52-428a-9af2-31976e56d625",
+          "c55b1699-71e1-4232-b514-d3c0aac2455c"
+        ],
+        "pending_message_ids": [],
+        "review_scope": "Cedar-only fictional narrative/current approval; unrelated material is not promoted"
+      },
+      {
+        "sot_id": "fbffa9c3-4121-4c9b-b74d-745ffdf5af3d",
+        "states": {
+          "source_preservation": "complete",
+          "native_completeness": "complete",
+          "normalization": "complete",
+          "attachment_preservation": "complete",
+          "topic_indexing": "complete",
+          "knowledge_reconciliation": "complete",
+          "work_reconciliation": "not_applicable"
+        },
+        "review_status": "in_review",
+        "approved_message_ids": [
+          "9568f2c2-fd62-4ab5-ba9d-9fa38ab4dd72",
+          "14c5db94-57f7-4ce2-b611-657a97b4fdca",
+          "a6ceba57-8f68-4b3d-8044-d12782660db6"
+        ],
+        "pending_message_ids": [
+          "de5ba3e4-d8fa-40f6-a0d5-02e89f33c67b"
+        ],
+        "review_scope": "Cedar-only fictional narrative/current approval; unrelated material is not promoted"
+      },
+      {
+        "sot_id": "d55383ea-9b9c-418b-89eb-8abdb1903ca8",
+        "states": {
+          "source_preservation": "complete",
+          "native_completeness": "complete",
+          "normalization": "complete",
+          "attachment_preservation": "complete",
+          "topic_indexing": "complete",
+          "knowledge_reconciliation": "complete",
+          "work_reconciliation": "not_applicable"
+        },
+        "review_status": "reviewed",
+        "approved_message_ids": [
+          "a6c0d15e-e1c8-44c9-b213-f7e7a1771775",
+          "16cedd42-e75f-4314-a69a-ded51b817530",
+          "62a3ba6d-b6c9-494f-a44b-f8db574dd804"
+        ],
+        "pending_message_ids": [],
+        "review_scope": "Cedar-only fictional narrative/current approval; unrelated material is not promoted"
+      },
+      {
+        "sot_id": "6944f5cd-1087-4f5d-8637-c68dd537a511",
+        "states": {
+          "source_preservation": "complete",
+          "native_completeness": "complete",
+          "normalization": "complete",
+          "attachment_preservation": "complete",
+          "topic_indexing": "complete",
+          "knowledge_reconciliation": "complete",
+          "work_reconciliation": "not_applicable"
+        },
+        "review_status": "in_review",
+        "approved_message_ids": [
+          "f4ab102e-ad25-4b23-b59d-5a9a1befb578",
+          "a5eeb8eb-daac-4d4f-95f8-3db17f038ab0"
+        ],
+        "pending_message_ids": [
+          "986c8b03-9329-4e50-bdd7-56961038789f"
+        ],
+        "review_scope": "Cedar-only fictional narrative/current approval; unrelated material is not promoted"
+      }
+    ],
+    "progress_checkpoint_paths": [
+      "SCOPE.json",
+      "COVERAGE.json",
+      "LINEAGE.json"
+    ],
+    "git_processing_checkpoint": null,
+    "git_processing_checkpoint_reason": "No Git publication transaction is initiated by this static distributed example. Canonical transaction checkpoints require actual commit identities; none are fabricated.",
+    "remote_receipt": null
+  }
+}

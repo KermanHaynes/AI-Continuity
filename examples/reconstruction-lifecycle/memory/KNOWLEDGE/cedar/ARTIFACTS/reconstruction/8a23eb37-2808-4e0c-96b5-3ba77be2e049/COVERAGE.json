@@ -1,0 +1,82 @@
+{
+  "synthetic": true,
+  "run_id": "8a23eb37-2808-4e0c-96b5-3ba77be2e049",
+  "scope_version": 1,
+  "state": "complete_for_declared_available_scope",
+  "reading_method": "every complete conversation and every authored message; no title/search exclusion",
+  "conversations": [
+    {
+      "sot_id": "a2a795e4-8458-4fe1-a9d7-e6541a1ceb30",
+      "native_conversation_id": "fictional-c1",
+      "title": "Weekend errands",
+      "transcript_path": "SOT/fictional/synthetic/2026/a2a795e4-8458-4fe1-a9d7-e6541a1ceb30/transcript.md",
+      "transcript_sha256": "3e8c7f5f8be2116c5932d4f0d0392305ff3faedca574b144678901d7104b7eca",
+      "original_sha256": "6d5aab914c05c318d3b002b0a8db47dee7071bb07b89194e42ab911db3dca86f",
+      "expected_message_ids": [
+        "5e614a88-602e-4f09-ba69-8c6fb05ed3f4",
+        "5390b3af-8d52-428a-9af2-31976e56d625",
+        "c55b1699-71e1-4232-b514-d3c0aac2455c"
+      ],
+      "read_message_ids": [
+        "5e614a88-602e-4f09-ba69-8c6fb05ed3f4",
+        "5390b3af-8d52-428a-9af2-31976e56d625",
+        "c55b1699-71e1-4232-b514-d3c0aac2455c"
+      ],
+      "available_text_status": "read_in_full",
+      "source_capture_status": "complete_for_authored_fixture",
+      "gaps": [],
+      "next_message_id": null,
+      "boundary_rule": "whole conversation retained"
+    },
+    {
+      "sot_id": "fbffa9c3-4121-4c9b-b74d-745ffdf5af3d",
+      "native_conversation_id": "fictional-c2",
+      "title": "Bicycle repair notes",
+      "transcript_path": "SOT/fictional/synthetic/2026/fbffa9c3-4121-4c9b-b74d-745ffdf5af3d/transcript.md",
+      "transcript_sha256": "4b3c421a6246e90c8fe830c8ad0e7143c9cf24946299a87cf70f86be45fdda03",
+      "original_sha256": "941b124588b68c5cb2148bb8a11f4a19a99da83595b118084fc640f7be41f22e",
+      "expected_message_ids": [
+        "de5ba3e4-d8fa-40f6-a0d5-02e89f33c67b",
+        "9568f2c2-fd62-4ab5-ba9d-9fa38ab4dd72",
+        "14c5db94-57f7-4ce2-b611-657a97b4fdca",
+        "a6ceba57-8f68-4b3d-8044-d12782660db6"
+      ],
+      "read_message_ids": [
+        "de5ba3e4-d8fa-40f6-a0d5-02e89f33c67b",
+        "9568f2c2-fd62-4ab5-ba9d-9fa38ab4dd72",
+        "14c5db94-57f7-4ce2-b611-657a97b4fdca",
+        "a6ceba57-8f68-4b3d-8044-d12782660db6"
+      ],
+      "available_text_status": "read_in_full",
+      "source_capture_status": "complete_for_authored_fixture",
+      "gaps": [],
+      "next_message_id": null,
+      "boundary_rule": "within period"
+    },
+    {
+      "sot_id": "d55383ea-9b9c-418b-89eb-8abdb1903ca8",
+      "native_conversation_id": "fictional-c3",
+      "title": "Cedar fault review",
+      "transcript_path": "SOT/fictional/synthetic/2026/d55383ea-9b9c-418b-89eb-8abdb1903ca8/transcript.md",
+      "transcript_sha256": "128c777e32204ca473dd697e928f68387f7ac3f024ee7dc7f6865599ade095f5",
+      "original_sha256": "c2acbd37eb1de517a15bc0750a37a339b14417a6a52d2d5a48c7cec77a3028e1",
+      "expected_message_ids": [
+        "a6c0d15e-e1c8-44c9-b213-f7e7a1771775",
+        "16cedd42-e75f-4314-a69a-ded51b817530",
+        "62a3ba6d-b6c9-494f-a44b-f8db574dd804"
+      ],
+      "read_message_ids": [
+        "a6c0d15e-e1c8-44c9-b213-f7e7a1771775",
+        "16cedd42-e75f-4314-a69a-ded51b817530",
+        "62a3ba6d-b6c9-494f-a44b-f8db574dd804"
+      ],
+      "available_text_status": "read_in_full",
+      "source_capture_status": "complete_for_authored_fixture",
+      "gaps": [],
+      "next_message_id": null,
+      "boundary_rule": "within period"
+    }
+  ],
+  "coverage_checkpoint": "saved before complete evolution and draft stages",
+  "reading_is_illustrative": "this records the complete authored example, not a claim of processing a real user archive"
+}

@@ -1,0 +1,27 @@
+record_type: topic_map
+schema_version: 1
+sot_id: d55383ea-9b9c-418b-89eb-8abdb1903ca8
+topics:
+- topic_id: aa799cc9-a719-43b1-b561-50981cf38a17
+  label: Cedar courtyard irrigation
+  provisional: false
+  message_ids:
+  - a6c0d15e-e1c8-44c9-b213-f7e7a1771775
+  - 16cedd42-e75f-4314-a69a-ded51b817530
+  - 62a3ba6d-b6c9-494f-a44b-f8db574dd804
+  subject_ids:
+  - 3818f1f1-ff07-42a6-8eca-577bbcecf21d
+  decisions_stated:
+  - Adopt sensor control with the fixed-timer fallback. It addresses rain and missing
+    readings while preserving predictable fault behavior. Supersede timer-only operation,
+    keep sensor-only rejected, and leave adaptive forecast scheduling deferred.
+  revisions:
+  - Adopt sensor control with the fixed-timer fallback. It addresses rain and missing
+    readings while preserving predictable fault behavior. Supersede timer-only operation,
+    keep sensor-only rejected, and leave adaptive forecast scheduling deferred.
+  open_questions:
+  - Adaptive forecast scheduling remains deferred.
+  experiments_and_results:
+  - In this fictional trial, a missing sensor reading could be handled by the timer
+    fallback instead of an undefined response.
+  artifact_ids: []

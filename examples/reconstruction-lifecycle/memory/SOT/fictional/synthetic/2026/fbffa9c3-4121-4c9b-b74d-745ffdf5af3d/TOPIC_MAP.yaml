@@ -1,0 +1,31 @@
+record_type: topic_map
+schema_version: 1
+sot_id: fbffa9c3-4121-4c9b-b74d-745ffdf5af3d
+topics:
+- topic_id: d1d54fdb-108d-4974-9ab5-eadd2e2bb4e9
+  label: Cedar courtyard irrigation
+  provisional: false
+  message_ids:
+  - 9568f2c2-fd62-4ab5-ba9d-9fa38ab4dd72
+  - 14c5db94-57f7-4ce2-b611-657a97b4fdca
+  - a6ceba57-8f68-4b3d-8044-d12782660db6
+  subject_ids:
+  - 3818f1f1-ff07-42a6-8eca-577bbcecf21d
+  decisions_stated: []
+  revisions: []
+  open_questions: []
+  experiments_and_results: []
+  artifact_ids: []
+- topic_id: bc5ff7bc-9cc9-40a9-9527-cdc6e2607d79
+  label: Bicycle maintenance
+  provisional: true
+  message_ids:
+  - de5ba3e4-d8fa-40f6-a0d5-02e89f33c67b
+  - 9568f2c2-fd62-4ab5-ba9d-9fa38ab4dd72
+  - 14c5db94-57f7-4ce2-b611-657a97b4fdca
+  subject_ids: []
+  decisions_stated: []
+  revisions: []
+  open_questions: []
+  experiments_and_results: []
+  artifact_ids: []

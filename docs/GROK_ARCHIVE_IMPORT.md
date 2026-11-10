@@ -1,0 +1,13 @@
+# Grok Archive Import
+
+The Grok archive adapter preserves native response text, identities and conversation ancestry.
+
+Native creation_source is retained as grok_in_x or standalone; absent declarations stay unknown. The mixed backend/package evidence is declared grok_package and may support only those native environments. Conversation and response IDs remain native references, with permanent repository UUIDs independent of the provider.
+
+Only response.message supplies readable transcript text. Preserve its exact Unicode, whitespace, Markdown, code, and provider-specific citation/render markup without significance filtering or rewriting. Thinking traces, summarized traces, agent traces, steps, search results and generated conversation summaries remain native evidence, not dialogue substitutes. Some native markup may need the provider renderer; raw transcript text and native source remain available for exact inspection.
+
+Native human normalizes to USER; assistant and ASSISTANT normalize to ASSISTANT. A model-named sender normalizes to ASSISTANT only for the observed Grok model labels when its explicit model field matches; unknown senders require review. Original sender/model distinctions remain in native evidence and message notes. Empty execution/thinking records do not become utterances. Explicit attachment-only user records and media-only assistant records retain actual identity, role, time and native reference, with no fabricated prose. Assistant non-text retention is explicitly enabled only for this evidence-backed adapter; existing adapters retain their previous default behavior.
+
+Use parent_response_id for ancestry, considering every available branch rather than leaf_response_id alone. Response-array order is not assumed chronological. Topological order uses original UTC timestamps and stable-ID ties; independent sibling order does not imply a reply relationship. Native children/path/metadata relationships remain separately preserved. Unresolved external parent references are retained and disclosed without inventing missing messages; partial flags describe the source, not permission to fill in omitted text. Native root timestamps are ISO timestamps; response timestamps use Mongo Extended JSON date milliseconds. Unknown dates remain null.
+
+Every new transcript is unreviewed. Native completeness, attachment reconciliation/retrieval, topics and intellectual processing remain pending. Source publication holds and transcript holds are independent. The adapter independently verifies complete message fields, source spans, IDs, roles, original times, branch coverage and known ancestry. Apply the separate user-review and capture-scope procedures to the actual record.

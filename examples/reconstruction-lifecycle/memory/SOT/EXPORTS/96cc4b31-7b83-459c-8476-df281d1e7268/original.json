@@ -1,0 +1,41 @@
+{
+  "synthetic": true,
+  "native_conversation_id": "fictional-c2",
+  "title": "Bicycle repair notes",
+  "original_started_at": "2026-01-04T08:00:00Z",
+  "original_ended_at": "2026-01-04T08:06:00Z",
+  "messages": [
+    {
+      "native_message_id": "fictional-c2-1",
+      "role": "user",
+      "original_timestamp": "2026-01-04T08:00:00Z",
+      "content": "The bicycle chain is clean and the rear brake needs adjustment.",
+      "source_locator": "messages[0]",
+      "attachment_ids": []
+    },
+    {
+      "native_message_id": "fictional-c2-2",
+      "role": "assistant",
+      "original_timestamp": "2026-01-04T08:02:00Z",
+      "content": "Record the brake adjustment before the next ride.\n\nFor the unrelated Cedar courtyard plan, a sensor with a timer fallback could retain predictable behavior when readings fail. This is an option to examine, not an accepted decision.",
+      "source_locator": "messages[1]",
+      "attachment_ids": []
+    },
+    {
+      "native_message_id": "fictional-c2-3",
+      "role": "user",
+      "original_timestamp": "2026-01-04T08:04:00Z",
+      "content": "The brake adjustment is on my list. Rain also showed why Cedar timer-only watering can waste water. Investigate the sensor-plus-fallback proposal; do not adopt it yet.",
+      "source_locator": "messages[2]",
+      "attachment_ids": []
+    },
+    {
+      "native_message_id": "fictional-c2-4",
+      "role": "assistant",
+      "original_timestamp": "2026-01-04T08:06:00Z",
+      "content": "The open Cedar question is what happens when a reading is absent. Sensor-only control is still outside the accepted plan.",
+      "source_locator": "messages[3]",
+      "attachment_ids": []
+    }
+  ]
+}

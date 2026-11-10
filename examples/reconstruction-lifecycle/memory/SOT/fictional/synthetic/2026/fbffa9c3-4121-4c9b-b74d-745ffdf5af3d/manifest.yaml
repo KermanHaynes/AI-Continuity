@@ -1,0 +1,83 @@
+record_type: sot_conversation
+schema_version: 1
+sot_id: fbffa9c3-4121-4c9b-b74d-745ffdf5af3d
+provider: fictional
+environment: synthetic
+native_conversation_id: fictional-c2
+fingerprint: 507d7cfcf23a9eae0848f3d0fb35447bc96dca7c30de7a247438341d7a3f2a4c
+source_conversation_locator: null
+title: Bicycle repair notes
+export_ids:
+- 96cc4b31-7b83-459c-8476-df281d1e7268
+source_files:
+- path: SOT/EXPORTS/96cc4b31-7b83-459c-8476-df281d1e7268/original.json
+  sha256: 941b124588b68c5cb2148bb8a11f4a19a99da83595b118084fc640f7be41f22e
+transcript_file: transcript.md
+message_index_file: MESSAGES.yaml
+topic_map_file: TOPIC_MAP.yaml
+topic_map_markdown_file: TOPIC_MAP.md
+timestamps:
+  original_started_at: '2026-01-04T08:00:00Z'
+  original_ended_at: '2026-01-04T08:06:00Z'
+  imported_at: '2026-11-09T20:05:21.632841+00:00'
+attachment_inventory:
+  expected_logical_attachments: 0
+  inventory_verification: verified
+  inventory_evidence:
+  - Fixture JSON has no attachments
+  registered_logical_attachment_ids: []
+counts:
+  total_messages: 4
+  role_totals:
+    user: 2
+    assistant: 2
+  user_turns: 2
+  attachments: 0
+  topics: 2
+states:
+  source_preservation: complete
+  native_completeness: complete
+  normalization: complete
+  attachment_preservation: complete
+  topic_indexing: complete
+  knowledge_reconciliation: complete
+  work_reconciliation: not_applicable
+state_reasons:
+  attachment_preservation: Authored original JSON and verified inventory contain zero
+    attachments.
+  native_completeness: Exact message identity, role, timestamp, source locator, text
+    checksum and complete authored fixture boundary verified against original JSON;
+    no claim about a real provider capture.
+  topic_indexing: All authored messages are covered by the Cedar and, where present,
+    unrelated-topic maps.
+  knowledge_reconciliation: Completed approved Cedar-only reconciliation to the linked
+    subject and preserved final/CURRENT. Other-topic review remains explicit in review
+    metadata.
+  work_reconciliation: No canonical WORK record is part of this approved Cedar knowledge
+    example. Other-topic material is retained in SOT for its own review scope.
+integrated_subject_ids:
+- 3818f1f1-ff07-42a6-8eca-577bbcecf21d
+integrated_work_item_ids: []
+capture_gaps: []
+last_processed_at: '2026-11-09T21:40:02.175326+00:00'
+archive_mode: integrated
+transcript_format: foundation_v1
+review:
+  status: in_review
+  history:
+  - transcript_sha256: 4b3c421a6246e90c8fe830c8ad0e7143c9cf24946299a87cf70f86be45fdda03
+    message_ids:
+    - 9568f2c2-fd62-4ab5-ba9d-9fa38ab4dd72
+    - 14c5db94-57f7-4ce2-b611-657a97b4fdca
+    - a6ceba57-8f68-4b3d-8044-d12782660db6
+    completed_at: '2026-11-09T21:40:02.174308+00:00'
+    user_approval_evidence: 'Authored fictional approval: SOT 6944f5cd-1087-4f5d-8637-c68dd537a511
+      message a5eeb8eb-daac-4d4f-95f8-3db17f038ab0; corrected Cedar final/current
+      scope in FINAL_v001.md. This is fixture approval, not a real person''s approval.'
+    subject_ids:
+    - 3818f1f1-ff07-42a6-8eca-577bbcecf21d
+    work_item_ids: []
+    deferred_material:
+    - Other-topic material is preserved in SOT and outside this Cedar knowledge approval.
+  pending_message_ids:
+  - de5ba3e4-d8fa-40f6-a0d5-02e89f33c67b

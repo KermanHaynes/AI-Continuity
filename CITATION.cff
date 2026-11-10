@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use AI-Continuity, please cite this project. Citation is appreciated and adds no license condition."
+type: software
+title: AI-Continuity
+authors:
+  - family-names: Haynes
+    given-names: Kerman
+repository-code: "https://github.com/KermanHaynes/AI-Continuity"
+url: "https://github.com/KermanHaynes/AI-Continuity"
+license: Apache-2.0
+abstract: "An implemented, model-independent memory continuity architecture preserving original conversational evidence, evolving knowledge, current authoritative positions, decision reasoning, and operational continuity across models and sessions."

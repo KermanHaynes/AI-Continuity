@@ -1,0 +1,2914 @@
+{
+  "P1-01-001": {
+    "section": 1,
+    "text": "This document defines the current AI-Continuity record and operation contract."
+  },
+  "P1-01-002": {
+    "section": 1,
+    "text": "Kerman Haynes conceived, designed and directed the architecture and its engineering. Implementation follows his architectural specifications."
+  },
+  "P1-01-003": {
+    "section": 1,
+    "text": "Operations preserve the specified record structures, behavior, validation and procedures."
+  },
+  "P1-01-004": {
+    "section": 1,
+    "text": "You may select ordinary internal programming details such as function decomposition, but you may not alter record semantics, remove required fields, simplify operating procedures, substitute different authority boundaries, or change the specified repository layout."
+  },
+  "P1-01-005": {
+    "section": 1,
+    "text": "A concrete implementation/specification mismatch is reported and corrected through the contribution process."
+  },
+  "P1-01-006": {
+    "section": 1,
+    "text": "Interpret each check within its defined record, operation and integrity scope."
+  },
+  "P1-01-007": {
+    "section": 1,
+    "text": "Record meanings and authority boundaries follow this contract and the canonical schemas."
+  },
+  "P1-01-008": {
+    "section": 1,
+    "text": "Resolve an actual conflicting operation requirement through the user or maintainer; preserve completed work and continue unaffected operations."
+  },
+  "P1-01-009": {
+    "section": 1,
+    "text": "The architecture must remain portable across Claude, Codex, Grok, Muse, ChatGPT, and other model environments."
+  },
+  "P1-01-010": {
+    "section": 1,
+    "text": "A fresh LLM, without access to previous conversations, must be able to open the private repository, identify the intended subject or work item, recover the relevant historical reasoning and established current position, identify pending actions and outcomes, and resume without the user reconstructing prior context."
+  },
+  "P1-01-011": {
+    "section": 1,
+    "text": "At closeout, an LLM with supported provider-native transcript access must preserve original evidence, reconcile the affected knowledge and operational records, verify Git persistence, and provide a truthful completion receipt."
+  },
+  "P1-01-012": {
+    "section": 1,
+    "text": "The repository is not merely a conversation archive. It is simultaneously:"
+  },
+  "P1-01-013": {
+    "section": 1,
+    "text": "- An immutable evidence archive."
+  },
+  "P1-01-014": {
+    "section": 1,
+    "text": "- An evolving knowledge system."
+  },
+  "P1-01-015": {
+    "section": 1,
+    "text": "- A persistent operational work system."
+  },
+  "P1-01-016": {
+    "section": 1,
+    "text": "- A provider-independent continuity mechanism."
+  },
+  "P1-01-017": {
+    "section": 1,
+    "text": "- A verifiable history of changes and outcomes."
+  },
+  "P1-01-018": {
+    "section": 1,
+    "text": "These five capabilities must remain separate in authority and integrated through stable references."
+  },
+  "P1-02-001": {
+    "section": 2,
+    "text": "A memory repository uses the following canonical structure."
+  },
+  "P1-02-002": {
+    "section": 2,
+    "text": "/"
+  },
+  "P1-02-003": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 README.md"
+  },
+  "P1-02-004": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 START_HERE.md"
+  },
+  "P1-02-005": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 AGENTS.md"
+  },
+  "P1-02-006": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 CONTEXT/"
+  },
+  "P1-02-007": {
+    "section": 2,
+    "text": "\u2502   \u251c\u2500\u2500 WORKING_STYLE.md"
+  },
+  "P1-02-008": {
+    "section": 2,
+    "text": "\u2502   \u251c\u2500\u2500 WRITING_STYLE.md"
+  },
+  "P1-02-009": {
+    "section": 2,
+    "text": "\u2502   \u251c\u2500\u2500 PREFERENCES.md"
+  },
+  "P1-02-010": {
+    "section": 2,
+    "text": "\u2502   \u2514\u2500\u2500 RESOURCES.md"
+  },
+  "P1-02-011": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 SOT/"
+  },
+  "P1-02-012": {
+    "section": 2,
+    "text": "\u2502   \u251c\u2500\u2500 EXPORTS/"
+  },
+  "P1-02-013": {
+    "section": 2,
+    "text": "\u2502   \u2502   \u2514\u2500\u2500 <export-uuid>/"
+  },
+  "P1-02-014": {
+    "section": 2,
+    "text": "\u2502   \u2502       \u251c\u2500\u2500 original.<native-extension>"
+  },
+  "P1-02-015": {
+    "section": 2,
+    "text": "\u2502   \u2502       \u2514\u2500\u2500 export.yaml"
+  },
+  "P1-02-016": {
+    "section": 2,
+    "text": "\u2502   \u2514\u2500\u2500 <provider>/<environment>/<year>/<sot-uuid>/"
+  },
+  "P1-02-017": {
+    "section": 2,
+    "text": "\u2502       \u251c\u2500\u2500 manifest.yaml"
+  },
+  "P1-02-018": {
+    "section": 2,
+    "text": "\u2502       \u251c\u2500\u2500 MESSAGES.yaml"
+  },
+  "P1-02-019": {
+    "section": 2,
+    "text": "\u2502       \u251c\u2500\u2500 transcript.md"
+  },
+  "P1-02-020": {
+    "section": 2,
+    "text": "\u2502       \u251c\u2500\u2500 TOPIC_MAP.yaml"
+  },
+  "P1-02-021": {
+    "section": 2,
+    "text": "\u2502       \u251c\u2500\u2500 TOPIC_MAP.md"
+  },
+  "P1-02-022": {
+    "section": 2,
+    "text": "\u2502       \u2514\u2500\u2500 attachments/"
+  },
+  "P1-02-023": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 KNOWLEDGE/"
+  },
+  "P1-02-024": {
+    "section": 2,
+    "text": "\u2502   \u2514\u2500\u2500 <subject-slug>/"
+  },
+  "P1-02-025": {
+    "section": 2,
+    "text": "\u2502       \u251c\u2500\u2500 subject.yaml"
+  },
+  "P1-02-026": {
+    "section": 2,
+    "text": "\u2502       \u251c\u2500\u2500 INDEX.md"
+  },
+  "P1-02-027": {
+    "section": 2,
+    "text": "\u2502       \u251c\u2500\u2500 CURRENT.md"
+  },
+  "P1-02-028": {
+    "section": 2,
+    "text": "\u2502       \u251c\u2500\u2500 EVOLUTION.md"
+  },
+  "P1-02-029": {
+    "section": 2,
+    "text": "\u2502       \u251c\u2500\u2500 SOURCES.md"
+  },
+  "P1-02-030": {
+    "section": 2,
+    "text": "\u2502       \u2514\u2500\u2500 ARTIFACTS/"
+  },
+  "P1-02-031": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 WORK/"
+  },
+  "P1-02-032": {
+    "section": 2,
+    "text": "\u2502   \u251c\u2500\u2500 ITEMS/"
+  },
+  "P1-02-033": {
+    "section": 2,
+    "text": "\u2502   \u2502   \u2514\u2500\u2500 work_<uuid>.md"
+  },
+  "P1-02-034": {
+    "section": 2,
+    "text": "\u2502   \u2514\u2500\u2500 AGENDA.md"
+  },
+  "P1-02-035": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 INDEX/"
+  },
+  "P1-02-036": {
+    "section": 2,
+    "text": "\u2502   \u251c\u2500\u2500 REGISTRY.yaml"
+  },
+  "P1-02-037": {
+    "section": 2,
+    "text": "\u2502   \u251c\u2500\u2500 ALIASES.yaml"
+  },
+  "P1-02-038": {
+    "section": 2,
+    "text": "\u2502   \u251c\u2500\u2500 ARTIFACTS.yaml"
+  },
+  "P1-02-039": {
+    "section": 2,
+    "text": "\u2502   \u251c\u2500\u2500 EXCEPTIONS.yaml"
+  },
+  "P1-02-040": {
+    "section": 2,
+    "text": "\u2502   \u251c\u2500\u2500 PROCESSING/"
+  },
+  "P1-02-041": {
+    "section": 2,
+    "text": "\u2502   \u2514\u2500\u2500 CLOSEOUTS/"
+  },
+  "P1-02-042": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 TEMPLATES/"
+  },
+  "P1-02-043": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 schemas/"
+  },
+  "P1-02-044": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 tools/"
+  },
+  "P1-02-045": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 tests/"
+  },
+  "P1-02-046": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 .github/workflows/"
+  },
+  "P1-02-047": {
+    "section": 2,
+    "text": "\u2514\u2500\u2500 docs/"
+  },
+  "P1-02-048": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 ARCHITECTURE_SPEC.md"
+  },
+  "P1-02-049": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 DESIGN_DECISIONS.md"
+  },
+  "P1-02-050": {
+    "section": 2,
+    "text": "\u2502   # shared contract data: ../contracts/traceability.json"
+  },
+  "P1-02-051": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 SETUP.md"
+  },
+  "P1-02-052": {
+    "section": 2,
+    "text": "\u2514\u2500\u2500 OPERATIONS/"
+  },
+  "P1-02-053": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 SESSION_OPEN.md"
+  },
+  "P1-02-054": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 SESSION_CLOSE.md"
+  },
+  "P1-02-055": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 SOT_IMPORT.md"
+  },
+  "P1-02-056": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 SUBJECT_MAINTENANCE.md"
+  },
+  "P1-02-057": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 WORK_MAINTENANCE.md"
+  },
+  "P1-02-058": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 RECONCILIATION.md"
+  },
+  "P1-02-059": {
+    "section": 2,
+    "text": "\u251c\u2500\u2500 AUDIT.md"
+  },
+  "P1-02-060": {
+    "section": 2,
+    "text": "\u2514\u2500\u2500 RECOVERY.md"
+  },
+  "P1-02-061": {
+    "section": 2,
+    "text": "The repository must not require an external database, web application, paid hosting service, or proprietary runtime."
+  },
+  "P1-02-062": {
+    "section": 2,
+    "text": "Use Python 3.11+, PyYAML, jsonschema, the standard-library `zoneinfo` module, Git, GitHub Actions, Markdown, and YAML."
+  },
+  "P1-02-063": {
+    "section": 2,
+    "text": "Consolidate duplicate templates and redundant indexes. Preserve a single authoritative definition for each record type."
+  },
+  "P1-02-064": {
+    "section": 2,
+    "text": "Use `.gitkeep` only where necessary to preserve otherwise empty directories."
+  },
+  "P1-02-065": {
+    "section": 2,
+    "text": "`docs/ARCHITECTURE_SPEC.md` defines the complete architectural contract; the overview provides navigation."
+  },
+  "P1-02-066": {
+    "section": 2,
+    "text": "`docs/DESIGN_DECISIONS.md` must record the governing architectural choices and their rationale."
+  },
+  "P1-02-067": {
+    "section": 2,
+    "text": "The machine-readable contracts/ data binds required behavior to implementation and check references."
+  },
+  "P1-02-068": {
+    "section": 2,
+    "text": "`AGENTS.md` and `START_HERE.md` are concise navigation and operating entry points, not competing architectural specifications."
+  },
+  "P1-02-069": {
+    "section": 2,
+    "text": "The operating procedures must implement the authoritative architecture without silently changing it."
+  },
+  "P1-03-001": {
+    "section": 3,
+    "text": "There are four separate forms of authority."
+  },
+  "P1-03-002": {
+    "section": 3,
+    "text": "**Original source authority:** Native provider exports and original attachments represent what was actually recorded."
+  },
+  "P1-03-003": {
+    "section": 3,
+    "text": "**Interpretive authority:** KNOWLEDGE represents reviewed understanding derived from evidence. It must distinguish user-established positions from model suggestions."
+  },
+  "P1-03-004": {
+    "section": 3,
+    "text": "**Operational authority:** WORK records represent established activities, statuses, commitments, dates, dependencies, external interactions, and outcomes."
+  },
+  "P1-03-005": {
+    "section": 3,
+    "text": "**Historical transaction authority:** Git commits and durable transaction receipts represent changes actually preserved in the repository."
+  },
+  "P1-03-006": {
+    "section": 3,
+    "text": "A derived record cannot overwrite, replace, or retrospectively rewrite original evidence."
+  },
+  "P1-03-007": {
+    "section": 3,
+    "text": "A model-generated suggestion cannot become a user decision merely because it appears in a transcript."
+  },
+  "P1-03-008": {
+    "section": 3,
+    "text": "A completed technical operation cannot be treated as an externally realized outcome."
+  },
+  "P1-03-009": {
+    "section": 3,
+    "text": "An index or agenda cannot become a competing authority against its underlying record."
+  },
+  "P1-03-010": {
+    "section": 3,
+    "text": "If two sources disagree, preserve both and identify the conflict. Do not silently resolve it."
+  },
+  "P1-03-011": {
+    "section": 3,
+    "text": "Unknown information must remain unknown."
+  },
+  "P1-04-001": {
+    "section": 4,
+    "text": "Use UUIDv4 for permanent repository identities."
+  },
+  "P1-04-002": {
+    "section": 4,
+    "text": "Required identity types:"
+  },
+  "P1-04-003": {
+    "section": 4,
+    "text": "- Export ID"
+  },
+  "P1-04-004": {
+    "section": 4,
+    "text": "- SOT conversation ID"
+  },
+  "P1-04-005": {
+    "section": 4,
+    "text": "- Normalized message ID"
+  },
+  "P1-04-006": {
+    "section": 4,
+    "text": "- Topic ID"
+  },
+  "P1-04-007": {
+    "section": 4,
+    "text": "- Artifact ID"
+  },
+  "P1-04-008": {
+    "section": 4,
+    "text": "- Knowledge subject ID"
+  },
+  "P1-04-009": {
+    "section": 4,
+    "text": "- Work item ID"
+  },
+  "P1-04-010": {
+    "section": 4,
+    "text": "- Action ID"
+  },
+  "P1-04-011": {
+    "section": 4,
+    "text": "- Date/commitment ID"
+  },
+  "P1-04-012": {
+    "section": 4,
+    "text": "- Event ID"
+  },
+  "P1-04-013": {
+    "section": 4,
+    "text": "- Outcome ID"
+  },
+  "P1-04-014": {
+    "section": 4,
+    "text": "- Exception ID"
+  },
+  "P1-04-015": {
+    "section": 4,
+    "text": "- Closeout/transaction ID"
+  },
+  "P1-04-016": {
+    "section": 4,
+    "text": "IDs must be independent of paths, names, topic classifications, timestamps, and model providers."
+  },
+  "P1-04-017": {
+    "section": 4,
+    "text": "An identity is minted once and subsequently reused."
+  },
+  "P1-04-018": {
+    "section": 4,
+    "text": "Preserve provider-native export, conversation, message, and artifact identifiers when available."
+  },
+  "P1-04-019": {
+    "section": 4,
+    "text": "Use a composite source identity based on provider, environment, and genuine native conversation identifier."
+  },
+  "P1-04-020": {
+    "section": 4,
+    "text": "If a native identifier is absent, record the absence. Use original source provenance and a deterministic fingerprint to detect likely duplicates."
+  },
+  "P1-04-021": {
+    "section": 4,
+    "text": "Never collapse two conversations merely because they are stored in the same export."
+  },
+  "P1-04-022": {
+    "section": 4,
+    "text": "Never silently merge ambiguous identities."
+  },
+  "P1-04-023": {
+    "section": 4,
+    "text": "Subject and work-item names may change without changing UUIDs."
+  },
+  "P1-04-024": {
+    "section": 4,
+    "text": "Retain historical names as aliases unless a name is explicitly disassociated."
+  },
+  "P1-04-025": {
+    "section": 4,
+    "text": "Reimporting identical evidence must not create duplicate SOT or message records."
+  },
+  "P1-04-026": {
+    "section": 4,
+    "text": "Additional messages from a later export must extend the existing conversation identity, retain existing message IDs, and preserve the earlier export as historical evidence."
+  },
+  "P1-04-027": {
+    "section": 4,
+    "text": "Conflicting export content must be preserved separately and registered as an unresolved conflict."
+  },
+  "P1-04-028": {
+    "section": 4,
+    "text": "Do not silently overwrite the earlier source."
+  },
+  "P1-05-001": {
+    "section": 5,
+    "text": "`SOT/EXPORTS/<export-id>/original.<ext>` preserves the actual provider-generated source bytes."
+  },
+  "P1-05-002": {
+    "section": 5,
+    "text": "When an export contains multiple conversations, preserve the original export once."
+  },
+  "P1-05-003": {
+    "section": 5,
+    "text": "Individual conversation manifests reference the shared export record."
+  },
+  "P1-05-004": {
+    "section": 5,
+    "text": "When an export represents one conversation, the same reference model applies. Do not create unnecessary duplicate native files."
+  },
+  "P1-05-005": {
+    "section": 5,
+    "text": "Every preserved source file must have a SHA-256 checksum."
+  },
+  "P1-05-006": {
+    "section": 5,
+    "text": "The validator must verify that registered source files exist and that their content matches their recorded checksum."
+  },
+  "P1-05-007": {
+    "section": 5,
+    "text": "Native source files are immutable after preservation."
+  },
+  "P1-05-008": {
+    "section": 5,
+    "text": "An expanded or corrected export is a new evidence version with its own export ID, linked to the existing conversation identity where appropriate."
+  },
+  "P1-05-009": {
+    "section": 5,
+    "text": "The earlier original remains preserved."
+  },
+  "P1-05-010": {
+    "section": 5,
+    "text": "Distinguish:"
+  },
+  "P1-05-011": {
+    "section": 5,
+    "text": "- `complete`: all messages and relevant attachments known to be present under the verified capture scope."
+  },
+  "P1-05-012": {
+    "section": 5,
+    "text": "- `partial`: known omissions or inaccessible sections."
+  },
+  "P1-05-013": {
+    "section": 5,
+    "text": "- `unknown`: no adequate evidence to establish completeness."
+  },
+  "P1-05-014": {
+    "section": 5,
+    "text": "Do not infer completeness from the apparent last message or a model's context window."
+  },
+  "P1-05-015": {
+    "section": 5,
+    "text": "Never reconstruct a complete native transcript from remembered or summarized conversation content."
+  },
+  "P1-05-016": {
+    "section": 5,
+    "text": "When source capture is unavailable, report the limitation and leave the operation incomplete."
+  },
+  "P1-05-017": {
+    "section": 5,
+    "text": "Before publishing, detect obvious credential and secret exposure."
+  },
+  "P1-05-018": {
+    "section": 5,
+    "text": "Do not publish secrets into the private repository, workflow logs, generated indexes, or audit summaries."
+  },
+  "P1-05-019": {
+    "section": 5,
+    "text": "If an authentic original contains sensitive credential material, stop the affected preservation step for authorized review. Do not silently rewrite the original while claiming byte-for-byte preservation."
+  },
+  "P1-05-020": {
+    "section": 5,
+    "text": "Do not expose historical personal content in public workflow artifacts or external services."
+  },
+  "P1-05-021": {
+    "section": 5,
+    "text": "Respect GitHub repository size and file-size restrictions. If a source exceeds supported limits, preserve it outside any destructive transformation, record the blocker, and request authorization for a storage solution. Do not silently substitute an unapproved external source-of-truth system."
+  },
+  "P1-06-001": {
+    "section": 6,
+    "text": "For each conversation, implement the required files:"
+  },
+  "P1-06-002": {
+    "section": 6,
+    "text": "`manifest.yaml`, `MESSAGES.yaml`, `transcript.md`, `TOPIC_MAP.yaml`, `TOPIC_MAP.md`, and the `attachments/` directory."
+  },
+  "P1-06-003": {
+    "section": 6,
+    "text": "Require these fields:"
+  },
+  "P1-06-004": {
+    "section": 6,
+    "text": "- `record_type: sot_conversation`"
+  },
+  "P1-06-005": {
+    "section": 6,
+    "text": "- `schema_version`"
+  },
+  "P1-06-006": {
+    "section": 6,
+    "text": "- `sot_id`"
+  },
+  "P1-06-007": {
+    "section": 6,
+    "text": "- `provider`"
+  },
+  "P1-06-008": {
+    "section": 6,
+    "text": "- `environment`"
+  },
+  "P1-06-009": {
+    "section": 6,
+    "text": "- `native_conversation_id`"
+  },
+  "P1-06-010": {
+    "section": 6,
+    "text": "- `title`"
+  },
+  "P1-06-011": {
+    "section": 6,
+    "text": "- `export_ids`"
+  },
+  "P1-06-012": {
+    "section": 6,
+    "text": "- `source_files`, with registered paths and SHA-256 hashes"
+  },
+  "P1-06-013": {
+    "section": 6,
+    "text": "- `transcript_file`"
+  },
+  "P1-06-014": {
+    "section": 6,
+    "text": "- `message_index_file`"
+  },
+  "P1-06-015": {
+    "section": 6,
+    "text": "- `topic_map_file`"
+  },
+  "P1-06-016": {
+    "section": 6,
+    "text": "- `topic_map_markdown_file`"
+  },
+  "P1-06-017": {
+    "section": 6,
+    "text": "- `timestamps`"
+  },
+  "P1-06-018": {
+    "section": 6,
+    "text": "- `counts`"
+  },
+  "P1-06-019": {
+    "section": 6,
+    "text": "- `states`"
+  },
+  "P1-06-020": {
+    "section": 6,
+    "text": "- `integrated_subject_ids`"
+  },
+  "P1-06-021": {
+    "section": 6,
+    "text": "- `integrated_work_item_ids`"
+  },
+  "P1-06-022": {
+    "section": 6,
+    "text": "- `capture_gaps`"
+  },
+  "P1-06-023": {
+    "section": 6,
+    "text": "- `last_processed_at`"
+  },
+  "P1-06-024": {
+    "section": 6,
+    "text": "The timestamps structure must distinguish original conversation time from import time."
+  },
+  "P1-06-025": {
+    "section": 6,
+    "text": "Unknown original timestamps remain null."
+  },
+  "P1-06-026": {
+    "section": 6,
+    "text": "The counts structure must retain total messages, role-specific totals, user turns, attachment count, and topic count."
+  },
+  "P1-06-027": {
+    "section": 6,
+    "text": "An undetermined topic count is null, not zero."
+  },
+  "P1-06-028": {
+    "section": 6,
+    "text": "Use `pending`, `in_progress`, `complete`, `blocked`, and `not_applicable` for individual processing operations."
+  },
+  "P1-06-029": {
+    "section": 6,
+    "text": "Preserve separate states for:"
+  },
+  "P1-06-030": {
+    "section": 6,
+    "text": "- Original source preservation"
+  },
+  "P1-06-031": {
+    "section": 6,
+    "text": "- Native completeness verification"
+  },
+  "P1-06-032": {
+    "section": 6,
+    "text": "- Normalization"
+  },
+  "P1-06-033": {
+    "section": 6,
+    "text": "- Attachment preservation"
+  },
+  "P1-06-034": {
+    "section": 6,
+    "text": "- Topic indexing"
+  },
+  "P1-06-035": {
+    "section": 6,
+    "text": "- Knowledge reconciliation"
+  },
+  "P1-06-036": {
+    "section": 6,
+    "text": "- Work reconciliation"
+  },
+  "P1-06-037": {
+    "section": 6,
+    "text": "An import can be fully preserved while knowledge reconciliation remains pending."
+  },
+  "P1-06-038": {
+    "section": 6,
+    "text": "A conversation with no durable knowledge or work contribution may be marked `not_applicable` for that integration, with an evidence-backed reason."
+  },
+  "P1-06-039": {
+    "section": 6,
+    "text": "Do not create fictitious knowledge or work records to satisfy an integration count."
+  },
+  "P1-06-040": {
+    "section": 6,
+    "text": "Maintain the authoritative normalized message index."
+  },
+  "P1-06-041": {
+    "section": 6,
+    "text": "For each message, record:"
+  },
+  "P1-06-042": {
+    "section": 6,
+    "text": "- Immutable normalized message UUID"
+  },
+  "P1-06-043": {
+    "section": 6,
+    "text": "- Provider-native message ID, if available"
+  },
+  "P1-06-044": {
+    "section": 6,
+    "text": "- Ordinal position"
+  },
+  "P1-06-045": {
+    "section": 6,
+    "text": "- Role"
+  },
+  "P1-06-046": {
+    "section": 6,
+    "text": "- Original timestamp or null"
+  },
+  "P1-06-047": {
+    "section": 6,
+    "text": "- Source export reference"
+  },
+  "P1-06-048": {
+    "section": 6,
+    "text": "- Exact source locator when available"
+  },
+  "P1-06-049": {
+    "section": 6,
+    "text": "- Transcript heading/anchor"
+  },
+  "P1-06-050": {
+    "section": 6,
+    "text": "- Referenced attachment IDs"
+  },
+  "P1-06-051": {
+    "section": 6,
+    "text": "- Completeness or transformation limitations"
+  },
+  "P1-06-052": {
+    "section": 6,
+    "text": "The message index is derived metadata, not a substitute for the original message content."
+  },
+  "P1-06-053": {
+    "section": 6,
+    "text": "Use a single deterministic GitHub-compatible anchor convention."
+  },
+  "P1-06-054": {
+    "section": 6,
+    "text": "Each message receives a heading of the form:"
+  },
+  "P1-06-055": {
+    "section": 6,
+    "text": "`### msg-<message-uuid>`"
+  },
+  "P1-06-056": {
+    "section": 6,
+    "text": "The normalized content follows the heading, with role, original timestamp, and provenance information."
+  },
+  "P1-06-057": {
+    "section": 6,
+    "text": "Use Markdown links targeting `#msg-<message-uuid>`."
+  },
+  "P1-06-058": {
+    "section": 6,
+    "text": "Do not rewrite original quoted content as an interpretation."
+  },
+  "P1-06-059": {
+    "section": 6,
+    "text": "Preserve distinctions among user messages, assistant messages, tool messages, and other provider-native message roles."
+  },
+  "P1-06-060": {
+    "section": 6,
+    "text": "Where source formatting cannot be faithfully represented in Markdown, reference the original material and disclose the limitation."
+  },
+  "P1-06-061": {
+    "section": 6,
+    "text": "Each topic record contains:"
+  },
+  "P1-06-062": {
+    "section": 6,
+    "text": "- Stable topic UUID"
+  },
+  "P1-06-063": {
+    "section": 6,
+    "text": "- Label"
+  },
+  "P1-06-064": {
+    "section": 6,
+    "text": "- Provisional flag"
+  },
+  "P1-06-065": {
+    "section": 6,
+    "text": "- One or more message references or message ranges"
+  },
+  "P1-06-066": {
+    "section": 6,
+    "text": "- Associated subject IDs"
+  },
+  "P1-06-067": {
+    "section": 6,
+    "text": "- Decisions stated"
+  },
+  "P1-06-068": {
+    "section": 6,
+    "text": "- Revisions"
+  },
+  "P1-06-069": {
+    "section": 6,
+    "text": "- Open questions"
+  },
+  "P1-06-070": {
+    "section": 6,
+    "text": "- Experiments and results"
+  },
+  "P1-06-071": {
+    "section": 6,
+    "text": "- Relevant artifacts"
+  },
+  "P1-06-072": {
+    "section": 6,
+    "text": "Topics may overlap."
+  },
+  "P1-06-073": {
+    "section": 6,
+    "text": "One topic may appear in several noncontiguous portions of the conversation."
+  },
+  "P1-06-074": {
+    "section": 6,
+    "text": "Do not require one exclusive topic per conversation."
+  },
+  "P1-06-075": {
+    "section": 6,
+    "text": "A source passage may contribute to several subjects without duplicating the original SOT."
+  },
+  "P1-06-076": {
+    "section": 6,
+    "text": "`TOPIC_MAP.md` is a readable navigational view of the structured map."
+  },
+  "P1-06-077": {
+    "section": 6,
+    "text": "When normalization is marked complete, verify:"
+  },
+  "P1-06-078": {
+    "section": 6,
+    "text": "- Message IDs are unique within and across the relevant namespace."
+  },
+  "P1-06-079": {
+    "section": 6,
+    "text": "- Every message anchor is unique."
+  },
+  "P1-06-080": {
+    "section": 6,
+    "text": "- Message index entries resolve to transcript anchors."
+  },
+  "P1-06-081": {
+    "section": 6,
+    "text": "- Message counts match indexed messages."
+  },
+  "P1-06-082": {
+    "section": 6,
+    "text": "- Role totals reconcile with total messages."
+  },
+  "P1-06-083": {
+    "section": 6,
+    "text": "- User-turn counts are deterministically checked where the normalized mapping permits."
+  },
+  "P1-06-084": {
+    "section": 6,
+    "text": "- Topic references resolve to existing messages."
+  },
+  "P1-06-085": {
+    "section": 6,
+    "text": "- Completed topic-indexing counts reconcile."
+  },
+  "P1-06-086": {
+    "section": 6,
+    "text": "- Artifact references resolve and checksums match."
+  },
+  "P1-06-087": {
+    "section": 6,
+    "text": "- Source export references exist."
+  },
+  "P1-06-088": {
+    "section": 6,
+    "text": "- Every complete-processing assertion has the necessary supporting structure."
+  },
+  "P1-06-089": {
+    "section": 6,
+    "text": "Do not scan the contents of arbitrary original JSON or YAML as repository metadata."
+  },
+  "P1-06-090": {
+    "section": 6,
+    "text": "Only explicitly recognized metadata paths are parsed as schemas."
+  },
+  "P1-07-001": {
+    "section": 7,
+    "text": "Every knowledge subject consists of one permanent identity and five required components:"
+  },
+  "P1-07-002": {
+    "section": 7,
+    "text": "- `subject.yaml`"
+  },
+  "P1-07-003": {
+    "section": 7,
+    "text": "- `INDEX.md`"
+  },
+  "P1-07-004": {
+    "section": 7,
+    "text": "- `CURRENT.md`"
+  },
+  "P1-07-005": {
+    "section": 7,
+    "text": "- `EVOLUTION.md`"
+  },
+  "P1-07-006": {
+    "section": 7,
+    "text": "- `SOURCES.md`"
+  },
+  "P1-07-007": {
+    "section": 7,
+    "text": "- `ARTIFACTS/`"
+  },
+  "P1-07-008": {
+    "section": 7,
+    "text": "Require:"
+  },
+  "P1-07-009": {
+    "section": 7,
+    "text": "- `record_type: knowledge_subject`"
+  },
+  "P1-07-010": {
+    "section": 7,
+    "text": "- Schema version"
+  },
+  "P1-07-011": {
+    "section": 7,
+    "text": "- Immutable subject UUID"
+  },
+  "P1-07-012": {
+    "section": 7,
+    "text": "- Canonical name"
+  },
+  "P1-07-013": {
+    "section": 7,
+    "text": "- Aliases"
+  },
+  "P1-07-014": {
+    "section": 7,
+    "text": "- Classifications"
+  },
+  "P1-07-015": {
+    "section": 7,
+    "text": "- Subject scope"
+  },
+  "P1-07-016": {
+    "section": 7,
+    "text": "- Explicit boundaries/exclusions"
+  },
+  "P1-07-017": {
+    "section": 7,
+    "text": "- Status"
+  },
+  "P1-07-018": {
+    "section": 7,
+    "text": "- Related subject IDs"
+  },
+  "P1-07-019": {
+    "section": 7,
+    "text": "- Source references"
+  },
+  "P1-07-020": {
+    "section": 7,
+    "text": "- Created timestamp"
+  },
+  "P1-07-021": {
+    "section": 7,
+    "text": "- Updated timestamp"
+  },
+  "P1-07-022": {
+    "section": 7,
+    "text": "- Last evidence-reviewed timestamp"
+  },
+  "P1-07-023": {
+    "section": 7,
+    "text": "- Integration state"
+  },
+  "P1-07-024": {
+    "section": 7,
+    "text": "Approved subject states are `provisional`, `active`, `dormant`, and `archived`."
+  },
+  "P1-07-025": {
+    "section": 7,
+    "text": "Aliases and classifications may be empty, but the record must contain the fields."
+  },
+  "P1-07-026": {
+    "section": 7,
+    "text": "Resolution order:"
+  },
+  "P1-07-027": {
+    "section": 7,
+    "text": "1. Exact UUID"
+  },
+  "P1-07-028": {
+    "section": 7,
+    "text": "2. Exact canonical name"
+  },
+  "P1-07-029": {
+    "section": 7,
+    "text": "3. Exact registered alias"
+  },
+  "P1-07-030": {
+    "section": 7,
+    "text": "4. Normalized canonical name or alias"
+  },
+  "P1-07-031": {
+    "section": 7,
+    "text": "Normalize with Unicode normalization, case folding, and whitespace normalization."
+  },
+  "P1-07-032": {
+    "section": 7,
+    "text": "Do not silently merge similar subjects."
+  },
+  "P1-07-033": {
+    "section": 7,
+    "text": "An ambiguous lookup produces an explicit ambiguity finding."
+  },
+  "P1-07-034": {
+    "section": 7,
+    "text": "A subject rename retains the UUID and existing source chain."
+  },
+  "P1-07-035": {
+    "section": 7,
+    "text": "Contains the subject's identity, scope, exclusions, aliases, classifications, short navigational summary, and links to its required files."
+  },
+  "P1-07-036": {
+    "section": 7,
+    "text": "Require these sections:"
+  },
+  "P1-07-037": {
+    "section": 7,
+    "text": "- Established Current Position"
+  },
+  "P1-07-038": {
+    "section": 7,
+    "text": "- Accepted Decisions"
+  },
+  "P1-07-039": {
+    "section": 7,
+    "text": "- Current Constraints"
+  },
+  "P1-07-040": {
+    "section": 7,
+    "text": "- Unresolved Questions"
+  },
+  "P1-07-041": {
+    "section": 7,
+    "text": "- Relevant Active Work"
+  },
+  "P1-07-042": {
+    "section": 7,
+    "text": "- Resume From Here"
+  },
+  "P1-07-043": {
+    "section": 7,
+    "text": "- Last Supporting Evidence"
+  },
+  "P1-07-044": {
+    "section": 7,
+    "text": "The document describes the most recent **established** position, not merely the latest imported statement."
+  },
+  "P1-07-045": {
+    "section": 7,
+    "text": "An unresolved suggestion cannot supersede an accepted decision."
+  },
+  "P1-07-046": {
+    "section": 7,
+    "text": "Unknowns must be explicit."
+  },
+  "P1-07-047": {
+    "section": 7,
+    "text": "Retain chronological entries describing:"
+  },
+  "P1-07-048": {
+    "section": 7,
+    "text": "- Original observation or position"
+  },
+  "P1-07-049": {
+    "section": 7,
+    "text": "- Later developments"
+  },
+  "P1-07-050": {
+    "section": 7,
+    "text": "- Alternatives considered"
+  },
+  "P1-07-051": {
+    "section": 7,
+    "text": "- Rejected approaches and reasons"
+  },
+  "P1-07-052": {
+    "section": 7,
+    "text": "- Decisions"
+  },
+  "P1-07-053": {
+    "section": 7,
+    "text": "- Revisions"
+  },
+  "P1-07-054": {
+    "section": 7,
+    "text": "- Contradictory evidence"
+  },
+  "P1-07-055": {
+    "section": 7,
+    "text": "- Supersession relationships"
+  },
+  "P1-07-056": {
+    "section": 7,
+    "text": "- Remaining uncertainty"
+  },
+  "P1-07-057": {
+    "section": 7,
+    "text": "- Supporting SOT/message references"
+  },
+  "P1-07-058": {
+    "section": 7,
+    "text": "Historical ordering follows the original occurrence date when known, not Git import order."
+  },
+  "P1-07-059": {
+    "section": 7,
+    "text": "Unknown dates retain their uncertainty."
+  },
+  "P1-07-060": {
+    "section": 7,
+    "text": "Older conversations imported later must be placed in the correct historical context."
+  },
+  "P1-07-061": {
+    "section": 7,
+    "text": "Maintain exact source references, chronological contribution, and evidence classification."
+  },
+  "P1-07-062": {
+    "section": 7,
+    "text": "At minimum distinguish:"
+  },
+  "P1-07-063": {
+    "section": 7,
+    "text": "- Established user position"
+  },
+  "P1-07-064": {
+    "section": 7,
+    "text": "- User proposal or developing idea"
+  },
+  "P1-07-065": {
+    "section": 7,
+    "text": "- Model suggestion"
+  },
+  "P1-07-066": {
+    "section": 7,
+    "text": "- Rejected or superseded position"
+  },
+  "P1-07-067": {
+    "section": 7,
+    "text": "- Supporting evidence"
+  },
+  "P1-07-068": {
+    "section": 7,
+    "text": "- Contradictory evidence"
+  },
+  "P1-07-069": {
+    "section": 7,
+    "text": "- Unresolved interpretation"
+  },
+  "P1-07-070": {
+    "section": 7,
+    "text": "A model may identify candidate subjects and proposed interpretations."
+  },
+  "P1-07-071": {
+    "section": 7,
+    "text": "It may not silently promote a candidate into an established user-approved position."
+  },
+  "P1-07-072": {
+    "section": 7,
+    "text": "A subject marked integrated must contain the required structure and navigable evidence."
+  },
+  "P1-07-073": {
+    "section": 7,
+    "text": "Structural validation must not pretend to establish interpretive truth."
+  },
+  "P1-07-074": {
+    "section": 7,
+    "text": "Do not create a subject for every passing mention."
+  },
+  "P1-08-001": {
+    "section": 8,
+    "text": "Use exactly one authoritative operational record per material pursuit:"
+  },
+  "P1-08-002": {
+    "section": 8,
+    "text": "`WORK/ITEMS/work_<uuid>.md`"
+  },
+  "P1-08-003": {
+    "section": 8,
+    "text": "Use YAML front matter for structured metadata and Markdown for historical operational narrative."
+  },
+  "P1-08-004": {
+    "section": 8,
+    "text": "Set the work-record schema version to 3."
+  },
+  "P1-08-005": {
+    "section": 8,
+    "text": "Do not continue creating separate YAML-only canonical work items."
+  },
+  "P1-08-006": {
+    "section": 8,
+    "text": "- `record_type: work_item`"
+  },
+  "P1-08-007": {
+    "section": 8,
+    "text": "- `schema_version: 3`"
+  },
+  "P1-08-008": {
+    "section": 8,
+    "text": "- `work_item_id`"
+  },
+  "P1-08-009": {
+    "section": 8,
+    "text": "- `title`"
+  },
+  "P1-08-010": {
+    "section": 8,
+    "text": "- `aliases`"
+  },
+  "P1-08-011": {
+    "section": 8,
+    "text": "- `type`"
+  },
+  "P1-08-012": {
+    "section": 8,
+    "text": "- `status`"
+  },
+  "P1-08-013": {
+    "section": 8,
+    "text": "- `status_history`"
+  },
+  "P1-08-014": {
+    "section": 8,
+    "text": "- `subject_ids`"
+  },
+  "P1-08-015": {
+    "section": 8,
+    "text": "- `source_refs`"
+  },
+  "P1-08-016": {
+    "section": 8,
+    "text": "- `relationships`"
+  },
+  "P1-08-017": {
+    "section": 8,
+    "text": "- `external_parties`"
+  },
+  "P1-08-018": {
+    "section": 8,
+    "text": "- `actions`"
+  },
+  "P1-08-019": {
+    "section": 8,
+    "text": "- `dates`"
+  },
+  "P1-08-020": {
+    "section": 8,
+    "text": "- `events`"
+  },
+  "P1-08-021": {
+    "section": 8,
+    "text": "- `outcomes`"
+  },
+  "P1-08-022": {
+    "section": 8,
+    "text": "- `last_external_verification`"
+  },
+  "P1-08-023": {
+    "section": 8,
+    "text": "- `resumption`"
+  },
+  "P1-08-024": {
+    "section": 8,
+    "text": "- `created_at`"
+  },
+  "P1-08-025": {
+    "section": 8,
+    "text": "- `updated_at`"
+  },
+  "P1-08-026": {
+    "section": 8,
+    "text": "A new work item must be created only for a material pursuit, commitment, experiment, application, external engagement, or activity that needs continuity."
+  },
+  "P1-08-027": {
+    "section": 8,
+    "text": "Trivial isolated tasks do not require permanent work records."
+  },
+  "P1-08-028": {
+    "section": 8,
+    "text": "The lifecycle states are:"
+  },
+  "P1-08-029": {
+    "section": 8,
+    "text": "- `planned`"
+  },
+  "P1-08-030": {
+    "section": 8,
+    "text": "- `active`"
+  },
+  "P1-08-031": {
+    "section": 8,
+    "text": "- `waiting`"
+  },
+  "P1-08-032": {
+    "section": 8,
+    "text": "- `blocked`"
+  },
+  "P1-08-033": {
+    "section": 8,
+    "text": "- `paused`"
+  },
+  "P1-08-034": {
+    "section": 8,
+    "text": "- `completed`"
+  },
+  "P1-08-035": {
+    "section": 8,
+    "text": "- `awaiting_outcome`"
+  },
+  "P1-08-036": {
+    "section": 8,
+    "text": "- `closed`"
+  },
+  "P1-08-037": {
+    "section": 8,
+    "text": "Preserve status-transition history."
+  },
+  "P1-08-038": {
+    "section": 8,
+    "text": "Each transition includes previous state, new state, effective time if known, reason if known, and evidence."
+  },
+  "P1-08-039": {
+    "section": 8,
+    "text": "`completed` means the defined activity was performed."
+  },
+  "P1-08-040": {
+    "section": 8,
+    "text": "`awaiting_outcome` means an external result is still pending."
+  },
+  "P1-08-041": {
+    "section": 8,
+    "text": "`closed` means the activity reached a recorded endpoint, including an explicit ending without the hoped-for result."
+  },
+  "P1-08-042": {
+    "section": 8,
+    "text": "Outcomes are independent of lifecycle statuses."
+  },
+  "P1-08-043": {
+    "section": 8,
+    "text": "An awaiting-outcome item may retain earlier partial outcomes."
+  },
+  "P1-08-044": {
+    "section": 8,
+    "text": "Reopening must retain the prior history."
+  },
+  "P1-08-045": {
+    "section": 8,
+    "text": "Require:"
+  },
+  "P1-08-046": {
+    "section": 8,
+    "text": "- `parent`: UUID or null"
+  },
+  "P1-08-047": {
+    "section": 8,
+    "text": "- `children`: array of UUIDs"
+  },
+  "P1-08-048": {
+    "section": 8,
+    "text": "- `depends_on`: array of UUIDs"
+  },
+  "P1-08-049": {
+    "section": 8,
+    "text": "- `related_to`: array of UUIDs"
+  },
+  "P1-08-050": {
+    "section": 8,
+    "text": "- `follows_from`: array of UUIDs"
+  },
+  "P1-08-051": {
+    "section": 8,
+    "text": "All references must resolve."
+  },
+  "P1-08-052": {
+    "section": 8,
+    "text": "Parent/child and related-to links must be reciprocal."
+  },
+  "P1-08-053": {
+    "section": 8,
+    "text": "Dependency and follows-from links are directional."
+  },
+  "P1-08-054": {
+    "section": 8,
+    "text": "For hierarchy cycle validation, use only child-to-parent edges."
+  },
+  "P1-08-055": {
+    "section": 8,
+    "text": "For dependency cycles, use only depends-on edges."
+  },
+  "P1-08-056": {
+    "section": 8,
+    "text": "For succession cycles, use only follows-from edges."
+  },
+  "P1-08-057": {
+    "section": 8,
+    "text": "Do not combine reciprocal relationship directions into a cycle-detection graph."
+  },
+  "P1-08-058": {
+    "section": 8,
+    "text": "Do not reject legitimate reciprocal parent/child pairs."
+  },
+  "P1-08-059": {
+    "section": 8,
+    "text": "Do not duplicate a work item because it belongs to several knowledge subjects."
+  },
+  "P1-08-060": {
+    "section": 8,
+    "text": "Each recorded action includes:"
+  },
+  "P1-08-061": {
+    "section": 8,
+    "text": "- Action UUID"
+  },
+  "P1-08-062": {
+    "section": 8,
+    "text": "- Description"
+  },
+  "P1-08-063": {
+    "section": 8,
+    "text": "- Classification as established or proposed"
+  },
+  "P1-08-064": {
+    "section": 8,
+    "text": "- Evidence references"
+  },
+  "P1-08-065": {
+    "section": 8,
+    "text": "- State: outstanding, completed, cancelled, or superseded"
+  },
+  "P1-08-066": {
+    "section": 8,
+    "text": "- Relevant date record IDs, if any"
+  },
+  "P1-08-067": {
+    "section": 8,
+    "text": "Only established actions enter the authoritative operational agenda."
+  },
+  "P1-08-068": {
+    "section": 8,
+    "text": "Do not invent a next action."
+  },
+  "P1-08-069": {
+    "section": 8,
+    "text": "Each date record includes:"
+  },
+  "P1-08-070": {
+    "section": 8,
+    "text": "- Date UUID"
+  },
+  "P1-08-071": {
+    "section": 8,
+    "text": "- Kind: `external_deadline`, `internal_target`, or `follow_up`"
+  },
+  "P1-08-072": {
+    "section": 8,
+    "text": "- Date or datetime, or null"
+  },
+  "P1-08-073": {
+    "section": 8,
+    "text": "- Precision"
+  },
+  "P1-08-074": {
+    "section": 8,
+    "text": "- IANA time zone when applicable"
+  },
+  "P1-08-075": {
+    "section": 8,
+    "text": "- State: active, satisfied, superseded, or cancelled"
+  },
+  "P1-08-076": {
+    "section": 8,
+    "text": "- Supporting evidence"
+  },
+  "P1-08-077": {
+    "section": 8,
+    "text": "- External verification information where applicable"
+  },
+  "P1-08-078": {
+    "section": 8,
+    "text": "Date-only commitments must not be converted into imaginary UTC midnight deadlines."
+  },
+  "P1-08-079": {
+    "section": 8,
+    "text": "Each event has a stable UUID, description, date/datetime, applicable time zone, source evidence, and state."
+  },
+  "P1-08-080": {
+    "section": 8,
+    "text": "Event states: `scheduled`, `occurred`, `cancelled`, `unknown`."
+  },
+  "P1-08-081": {
+    "section": 8,
+    "text": "Historical events remain in the activity record but do not indefinitely trigger upcoming-event alerts."
+  },
+  "P1-08-082": {
+    "section": 8,
+    "text": "Each outcome contains a stable UUID, description, partial/final classification, occurrence date if known, and supporting evidence."
+  },
+  "P1-08-083": {
+    "section": 8,
+    "text": "Require:"
+  },
+  "P1-08-084": {
+    "section": 8,
+    "text": "- Current operational position"
+  },
+  "P1-08-085": {
+    "section": 8,
+    "text": "- Last meaningful development"
+  },
+  "P1-08-086": {
+    "section": 8,
+    "text": "- Established next action IDs, possibly empty"
+  },
+  "P1-08-087": {
+    "section": 8,
+    "text": "- Unresolved questions"
+  },
+  "P1-08-088": {
+    "section": 8,
+    "text": "- Pending external matters"
+  },
+  "P1-08-089": {
+    "section": 8,
+    "text": "- Relevant source references"
+  },
+  "P1-08-090": {
+    "section": 8,
+    "text": "- Last review timestamp"
+  },
+  "P1-08-091": {
+    "section": 8,
+    "text": "Unknowns must not be filled with model-generated assumptions."
+  },
+  "P1-08-092": {
+    "section": 8,
+    "text": "Require:"
+  },
+  "P1-08-093": {
+    "section": 8,
+    "text": "- Objective"
+  },
+  "P1-08-094": {
+    "section": 8,
+    "text": "- Current Position"
+  },
+  "P1-08-095": {
+    "section": 8,
+    "text": "- Activity and Status History"
+  },
+  "P1-08-096": {
+    "section": 8,
+    "text": "- External Interactions"
+  },
+  "P1-08-097": {
+    "section": 8,
+    "text": "- Outcomes"
+  },
+  "P1-08-098": {
+    "section": 8,
+    "text": "- Constraints and Dependencies"
+  },
+  "P1-08-099": {
+    "section": 8,
+    "text": "- Resume From Here"
+  },
+  "P1-08-100": {
+    "section": 8,
+    "text": "These sections preserve the substance needed to resume a complicated activity, not merely status metadata."
+  },
+  "P1-08-101": {
+    "section": 8,
+    "text": "The validator checks their existence and structural completeness. A model or human reviews their meaning."
+  },
+  "P1-09-001": {
+    "section": 9,
+    "text": "`WORK/AGENDA.md` is a deterministic view of canonical work records."
+  },
+  "P1-09-002": {
+    "section": 9,
+    "text": "It is not independently edited as an authority."
+  },
+  "P1-09-003": {
+    "section": 9,
+    "text": "Include all relevant records in:"
+  },
+  "P1-09-004": {
+    "section": 9,
+    "text": "`planned`, `active`, `waiting`, `blocked`, `paused`, and `awaiting_outcome`."
+  },
+  "P1-09-005": {
+    "section": 9,
+    "text": "For each, display:"
+  },
+  "P1-09-006": {
+    "section": 9,
+    "text": "- Work ID"
+  },
+  "P1-09-007": {
+    "section": 9,
+    "text": "- Title"
+  },
+  "P1-09-008": {
+    "section": 9,
+    "text": "- Status"
+  },
+  "P1-09-009": {
+    "section": 9,
+    "text": "- Established next action, or undetermined"
+  },
+  "P1-09-010": {
+    "section": 9,
+    "text": "- External deadlines"
+  },
+  "P1-09-011": {
+    "section": 9,
+    "text": "- Internal targets, separately labeled"
+  },
+  "P1-09-012": {
+    "section": 9,
+    "text": "- Follow-up dates"
+  },
+  "P1-09-013": {
+    "section": 9,
+    "text": "- Scheduled events"
+  },
+  "P1-09-014": {
+    "section": 9,
+    "text": "- Pending external matters"
+  },
+  "P1-09-015": {
+    "section": 9,
+    "text": "- Relevant time zones"
+  },
+  "P1-09-016": {
+    "section": 9,
+    "text": "- Link to the canonical work record"
+  },
+  "P1-09-017": {
+    "section": 9,
+    "text": "Sort dated items chronologically, using the appropriate local date/time semantics."
+  },
+  "P1-09-018": {
+    "section": 9,
+    "text": "Place undated items in a separate section."
+  },
+  "P1-09-019": {
+    "section": 9,
+    "text": "Do not exclude an item merely because its date is unknown."
+  },
+  "P1-09-020": {
+    "section": 9,
+    "text": "Exclude resolved, cancelled, superseded, and occurred obligations from upcoming-event listings, while retaining their historical records."
+  },
+  "P1-09-021": {
+    "section": 9,
+    "text": "Any authoritative work-record change must regenerate or verify the agenda."
+  },
+  "P1-09-022": {
+    "section": 9,
+    "text": "A mismatched agenda must fail structural validation."
+  },
+  "P1-10-001": {
+    "section": 10,
+    "text": "`CONTEXT/` contains durable, broadly applicable preferences, working methods, writing style, and resources."
+  },
+  "P1-10-002": {
+    "section": 10,
+    "text": "Do not populate these files with invented personal facts."
+  },
+  "P1-10-003": {
+    "section": 10,
+    "text": "Only durable user-established information belongs here."
+  },
+  "P1-10-004": {
+    "section": 10,
+    "text": "Do not promote a single situational preference into a global instruction without evidence."
+  },
+  "P1-10-005": {
+    "section": 10,
+    "text": "`RESOURCES.md` distinguishes:"
+  },
+  "P1-10-006": {
+    "section": 10,
+    "text": "- A resource known to exist"
+  },
+  "P1-10-007": {
+    "section": 10,
+    "text": "- A resource connected to the present environment"
+  },
+  "P1-10-008": {
+    "section": 10,
+    "text": "- A resource accessible and verified"
+  },
+  "P1-10-009": {
+    "section": 10,
+    "text": "- A resource unavailable or requiring authorization"
+  },
+  "P1-10-010": {
+    "section": 10,
+    "text": "Never infer access to a provider transcript from access to GitHub."
+  },
+  "P1-11-001": {
+    "section": 11,
+    "text": "The session-opening procedure is:"
+  },
+  "P1-11-002": {
+    "section": 11,
+    "text": "1. Resolve the intended private repository and authoritative branch."
+  },
+  "P1-11-003": {
+    "section": 11,
+    "text": "2. Verify remote state and record the starting SHA."
+  },
+  "P1-11-004": {
+    "section": 11,
+    "text": "3. Read `START_HERE.md` and `AGENTS.md`."
+  },
+  "P1-11-005": {
+    "section": 11,
+    "text": "4. Read the relevant operation guidance."
+  },
+  "P1-11-006": {
+    "section": 11,
+    "text": "5. Establish actual provider-native capture capability."
+  },
+  "P1-11-007": {
+    "section": 11,
+    "text": "6. Resolve the requested subject or work item by ID/name/alias."
+  },
+  "P1-11-008": {
+    "section": 11,
+    "text": "7. Retrieve current knowledge and operational resumption records."
+  },
+  "P1-11-009": {
+    "section": 11,
+    "text": "8. Retrieve associated unfinished work and the agenda."
+  },
+  "P1-11-010": {
+    "section": 11,
+    "text": "9. Retrieve historical evolution necessary to understand the present position."
+  },
+  "P1-11-011": {
+    "section": 11,
+    "text": "10. Inspect original source passages when deeper evidence is required."
+  },
+  "P1-11-012": {
+    "section": 11,
+    "text": "11. Surface relevant unresolved exceptions and incomplete integrations."
+  },
+  "P1-11-013": {
+    "section": 11,
+    "text": "12. Distinguish stored status from externally reverified status."
+  },
+  "P1-11-014": {
+    "section": 11,
+    "text": "13. Report readiness, inspected evidence, unknowns, and any limitations."
+  },
+  "P1-11-015": {
+    "section": 11,
+    "text": "Use three levels of progressive retrieval:"
+  },
+  "P1-11-016": {
+    "section": 11,
+    "text": "**Level 1:** Current knowledge and active work."
+  },
+  "P1-11-017": {
+    "section": 11,
+    "text": "**Level 2:** Relevant history, reasoning, and dependencies."
+  },
+  "P1-11-018": {
+    "section": 11,
+    "text": "**Level 3:** Exact original messages and artifacts."
+  },
+  "P1-11-019": {
+    "section": 11,
+    "text": "Do not load the complete repository unnecessarily."
+  },
+  "P1-11-020": {
+    "section": 11,
+    "text": "Opening leaves canonical knowledge and WORK unchanged. Establish the selected faithful capture file and append accessible session messages as described in the capture procedure."
+  },
+  "P1-11-021": {
+    "section": 11,
+    "text": "Do not create exception records or modify authoritative content merely because a problem was found during orientation."
+  },
+  "P1-11-022": {
+    "section": 11,
+    "text": "Report ambiguities rather than guessing."
+  },
+  "P1-12-001": {
+    "section": 12,
+    "text": "Closeout requires an explicit user instruction."
+  },
+  "P1-12-002": {
+    "section": 12,
+    "text": "The closeout sequence is:"
+  },
+  "P1-12-003": {
+    "section": 12,
+    "text": "Identify provider, environment, session identity, cutoff, native export accessibility, attachments, completeness, and current Git state."
+  },
+  "P1-12-004": {
+    "section": 12,
+    "text": "If source capture is unavailable, do not claim complete archival."
+  },
+  "P1-12-005": {
+    "section": 12,
+    "text": "Preserve actual source bytes."
+  },
+  "P1-12-006": {
+    "section": 12,
+    "text": "Create or reuse permanent identities."
+  },
+  "P1-12-007": {
+    "section": 12,
+    "text": "Generate validated normalized records."
+  },
+  "P1-12-008": {
+    "section": 12,
+    "text": "Commit source preservation separately."
+  },
+  "P1-12-009": {
+    "section": 12,
+    "text": "Identify every materially affected subject and work record."
+  },
+  "P1-12-010": {
+    "section": 12,
+    "text": "For each affected record, classify the operation as:"
+  },
+  "P1-12-011": {
+    "section": 12,
+    "text": "- Changed"
+  },
+  "P1-12-012": {
+    "section": 12,
+    "text": "- Verified unchanged"
+  },
+  "P1-12-013": {
+    "section": 12,
+    "text": "- Not applicable"
+  },
+  "P1-12-014": {
+    "section": 12,
+    "text": "- Incomplete"
+  },
+  "P1-12-015": {
+    "section": 12,
+    "text": "Preserve historical reasoning, accepted decisions, revisions, outcomes, obligations, and unresolved issues."
+  },
+  "P1-12-016": {
+    "section": 12,
+    "text": "Regenerate indexes and agenda."
+  },
+  "P1-12-017": {
+    "section": 12,
+    "text": "Validate."
+  },
+  "P1-12-018": {
+    "section": 12,
+    "text": "Commit derived changes separately."
+  },
+  "P1-12-019": {
+    "section": 12,
+    "text": "Compare the original starting SHA to the latest remote state."
+  },
+  "P1-12-020": {
+    "section": 12,
+    "text": "If there are concurrent changes:"
+  },
+  "P1-12-021": {
+    "section": 12,
+    "text": "- Integrate unrelated changes."
+  },
+  "P1-12-022": {
+    "section": 12,
+    "text": "- Reconcile compatible overlapping changes without losing either."
+  },
+  "P1-12-023": {
+    "section": 12,
+    "text": "- Preserve competing evidence when meaning conflicts."
+  },
+  "P1-12-024": {
+    "section": 12,
+    "text": "- Escalate unresolved authoritative contradictions for user judgment."
+  },
+  "P1-12-025": {
+    "section": 12,
+    "text": "Never silently apply last-writer-wins."
+  },
+  "P1-12-026": {
+    "section": 12,
+    "text": "Push the authorized transaction."
+  },
+  "P1-12-027": {
+    "section": 12,
+    "text": "Verify actual remote commit ancestry."
+  },
+  "P1-12-028": {
+    "section": 12,
+    "text": "Confirm the preservation and derived commits are remotely reachable."
+  },
+  "P1-12-029": {
+    "section": 12,
+    "text": "Record the observed branch, SHA, time, and verification mechanism."
+  },
+  "P1-12-030": {
+    "section": 12,
+    "text": "Create a subsequent receipt/attestation record referencing the already-created commits."
+  },
+  "P1-12-031": {
+    "section": 12,
+    "text": "Commit and verify that receipt separately."
+  },
+  "P1-12-032": {
+    "section": 12,
+    "text": "Return actual full commit SHAs and GitHub links, validation results, affected IDs, and limitations."
+  },
+  "P1-12-033": {
+    "section": 12,
+    "text": "Do not place a commit's own SHA inside its own contents."
+  },
+  "P1-12-034": {
+    "section": 12,
+    "text": "A historical closeout remains valid after subsequent ordinary commits advance the repository."
+  },
+  "P1-12-035": {
+    "section": 12,
+    "text": "Do not equate caller-supplied verification flags with actual remote verification."
+  },
+  "P1-13-001": {
+    "section": 13,
+    "text": "Maintain persistent exception records with:"
+  },
+  "P1-13-002": {
+    "section": 13,
+    "text": "- Stable exception UUID"
+  },
+  "P1-13-003": {
+    "section": 13,
+    "text": "- Classification"
+  },
+  "P1-13-004": {
+    "section": 13,
+    "text": "- Detection timestamp"
+  },
+  "P1-13-005": {
+    "section": 13,
+    "text": "- Affected record IDs"
+  },
+  "P1-13-006": {
+    "section": 13,
+    "text": "- Evidence"
+  },
+  "P1-13-007": {
+    "section": 13,
+    "text": "- Last verified SHA"
+  },
+  "P1-13-008": {
+    "section": 13,
+    "text": "- Current status"
+  },
+  "P1-13-009": {
+    "section": 13,
+    "text": "- Recovery requirements"
+  },
+  "P1-13-010": {
+    "section": 13,
+    "text": "- Correcting commit references"
+  },
+  "P1-13-011": {
+    "section": 13,
+    "text": "Support these interruption conditions:"
+  },
+  "P1-13-012": {
+    "section": 13,
+    "text": "- Native capture unavailable"
+  },
+  "P1-13-013": {
+    "section": 13,
+    "text": "- Captured but not normalized"
+  },
+  "P1-13-014": {
+    "section": 13,
+    "text": "- Preserved but not integrated"
+  },
+  "P1-13-015": {
+    "section": 13,
+    "text": "- Derived reconciliation incomplete"
+  },
+  "P1-13-016": {
+    "section": 13,
+    "text": "- Validation failed"
+  },
+  "P1-13-017": {
+    "section": 13,
+    "text": "- Remote push failed"
+  },
+  "P1-13-018": {
+    "section": 13,
+    "text": "- Concurrent semantic conflict"
+  },
+  "P1-13-019": {
+    "section": 13,
+    "text": "- Verified complete"
+  },
+  "P1-13-020": {
+    "section": 13,
+    "text": "Never discard valid original evidence."
+  },
+  "P1-13-021": {
+    "section": 13,
+    "text": "Never overwrite conflicting SOT bytes."
+  },
+  "P1-13-022": {
+    "section": 13,
+    "text": "Resume from the last verified checkpoint."
+  },
+  "P1-13-023": {
+    "section": 13,
+    "text": "Reattempting a failed operation must not generate duplicate identities or duplicate authoritative records."
+  },
+  "P1-13-024": {
+    "section": 13,
+    "text": "Do not use destructive Git history rewriting as ordinary recovery."
+  },
+  "P1-13-025": {
+    "section": 13,
+    "text": "Audits cannot autonomously resolve semantic exceptions."
+  },
+  "P1-14-001": {
+    "section": 14,
+    "text": "The same deterministic validation engine serves local checks and GitHub CI."
+  },
+  "P1-14-002": {
+    "section": 14,
+    "text": "It must verify:"
+  },
+  "P1-14-003": {
+    "section": 14,
+    "text": "- Record schemas"
+  },
+  "P1-14-004": {
+    "section": 14,
+    "text": "- Permanent ID uniqueness"
+  },
+  "P1-14-005": {
+    "section": 14,
+    "text": "- Native source hashes"
+  },
+  "P1-14-006": {
+    "section": 14,
+    "text": "- Valid source references"
+  },
+  "P1-14-007": {
+    "section": 14,
+    "text": "- Transcript anchors"
+  },
+  "P1-14-008": {
+    "section": 14,
+    "text": "- Message counts and role totals"
+  },
+  "P1-14-009": {
+    "section": 14,
+    "text": "- Topic-map references"
+  },
+  "P1-14-010": {
+    "section": 14,
+    "text": "- Subject identity and aliases"
+  },
+  "P1-14-011": {
+    "section": 14,
+    "text": "- Subject structural completeness"
+  },
+  "P1-14-012": {
+    "section": 14,
+    "text": "- Work lifecycle"
+  },
+  "P1-14-013": {
+    "section": 14,
+    "text": "- Work status history"
+  },
+  "P1-14-014": {
+    "section": 14,
+    "text": "- Work relationships"
+  },
+  "P1-14-015": {
+    "section": 14,
+    "text": "- Hierarchy, dependency, and succession cycles"
+  },
+  "P1-14-016": {
+    "section": 14,
+    "text": "- Outcome and action evidence references"
+  },
+  "P1-14-017": {
+    "section": 14,
+    "text": "- Dates and time zones"
+  },
+  "P1-14-018": {
+    "section": 14,
+    "text": "- Agenda consistency"
+  },
+  "P1-14-019": {
+    "section": 14,
+    "text": "- Registry coherence"
+  },
+  "P1-14-020": {
+    "section": 14,
+    "text": "- Processing-state completeness"
+  },
+  "P1-14-021": {
+    "section": 14,
+    "text": "- Exception references"
+  },
+  "P1-14-022": {
+    "section": 14,
+    "text": "- Closeout processing status"
+  },
+  "P1-14-023": {
+    "section": 14,
+    "text": "- Git receipt structural integrity"
+  },
+  "P1-14-024": {
+    "section": 14,
+    "text": "- Known incomplete operations"
+  },
+  "P1-14-025": {
+    "section": 14,
+    "text": "Support these modes:"
+  },
+  "P1-14-026": {
+    "section": 14,
+    "text": "- `check`: read-only validation"
+  },
+  "P1-14-027": {
+    "section": 14,
+    "text": "- `plan-repair`: report proposed mechanical corrections without writing"
+  },
+  "P1-14-028": {
+    "section": 14,
+    "text": "- `apply-repair`: authorized deterministic correction only"
+  },
+  "P1-14-029": {
+    "section": 14,
+    "text": "Do not implement semantic repair as an autonomous validator action."
+  },
+  "P1-14-030": {
+    "section": 14,
+    "text": "Differentiate:"
+  },
+  "P1-14-031": {
+    "section": 14,
+    "text": "- Blocking errors"
+  },
+  "P1-14-032": {
+    "section": 14,
+    "text": "- Nonblocking warnings"
+  },
+  "P1-14-033": {
+    "section": 14,
+    "text": "- Informational findings"
+  },
+  "P1-14-034": {
+    "section": 14,
+    "text": "A validator must not pass merely because it skipped mandatory checks."
+  },
+  "P1-14-035": {
+    "section": 14,
+    "text": "Do not parse arbitrary provider-native source content as repository metadata."
+  },
+  "P1-15-001": {
+    "section": 15,
+    "text": "Maintain GitHub Free-compatible, read-only GitHub Actions."
+  },
+  "P1-15-002": {
+    "section": 15,
+    "text": "Identify:"
+  },
+  "P1-15-003": {
+    "section": 15,
+    "text": "- External deadlines approaching within seven calendar days"
+  },
+  "P1-15-004": {
+    "section": 15,
+    "text": "- Overdue established external deadlines"
+  },
+  "P1-15-005": {
+    "section": 15,
+    "text": "- Due or overdue follow-ups"
+  },
+  "P1-15-006": {
+    "section": 15,
+    "text": "- Scheduled upcoming events"
+  },
+  "P1-15-007": {
+    "section": 15,
+    "text": "- Scheduled events whose dates passed without an updated state"
+  },
+  "P1-15-008": {
+    "section": 15,
+    "text": "- Relevant operational exceptions"
+  },
+  "P1-15-009": {
+    "section": 15,
+    "text": "Use IANA time zones and correct date-only semantics."
+  },
+  "P1-15-010": {
+    "section": 15,
+    "text": "Never invent reminders."
+  },
+  "P1-15-011": {
+    "section": 15,
+    "text": "Perform whole-repository integrity validation and identify unresolved recovery exceptions and missing audit executions."
+  },
+  "P1-15-012": {
+    "section": 15,
+    "text": "Generate a review queue for:"
+  },
+  "P1-15-013": {
+    "section": 15,
+    "text": "- Recently changed knowledge"
+  },
+  "P1-15-014": {
+    "section": 15,
+    "text": "- Pending historical integrations"
+  },
+  "P1-15-015": {
+    "section": 15,
+    "text": "- Open exceptions"
+  },
+  "P1-15-016": {
+    "section": 15,
+    "text": "- Older source sampling"
+  },
+  "P1-15-017": {
+    "section": 15,
+    "text": "- Prior interpretation concerns"
+  },
+  "P1-15-018": {
+    "section": 15,
+    "text": "This is review preparation, not a claim that semantic fidelity was independently audited."
+  },
+  "P1-15-019": {
+    "section": 15,
+    "text": "Scheduled checks are finding-only."
+  },
+  "P1-15-020": {
+    "section": 15,
+    "text": "They must not modify canonical SOT, KNOWLEDGE, WORK, or authoritative indexes."
+  },
+  "P1-15-021": {
+    "section": 15,
+    "text": "Use minimum necessary GitHub permissions."
+  },
+  "P1-15-022": {
+    "section": 15,
+    "text": "Do not write native transcript content into logs."
+  },
+  "P1-15-023": {
+    "section": 15,
+    "text": "Preserve actual workflow SHA, run ID, execution time, scope, findings, and limitations."
+  },
+  "P1-15-024": {
+    "section": 15,
+    "text": "External recurring watchdogs require separate authorized configuration."
+  },
+  "P1-16-001": {
+    "section": 16,
+    "text": "Provide a documented command-line interface with these operations:"
+  },
+  "P1-16-002": {
+    "section": 16,
+    "text": "- `validate`"
+  },
+  "P1-16-003": {
+    "section": 16,
+    "text": "- `new-id`"
+  },
+  "P1-16-004": {
+    "section": 16,
+    "text": "- `register-export`"
+  },
+  "P1-16-005": {
+    "section": 16,
+    "text": "- `register-sot`"
+  },
+  "P1-16-006": {
+    "section": 16,
+    "text": "- `resolve-source`"
+  },
+  "P1-16-007": {
+    "section": 16,
+    "text": "- `create-subject`"
+  },
+  "P1-16-008": {
+    "section": 16,
+    "text": "- `resolve-subject`"
+  },
+  "P1-16-009": {
+    "section": 16,
+    "text": "- `associate-source`"
+  },
+  "P1-16-010": {
+    "section": 16,
+    "text": "- `create-work`"
+  },
+  "P1-16-011": {
+    "section": 16,
+    "text": "- `transition-work`"
+  },
+  "P1-16-012": {
+    "section": 16,
+    "text": "- `render-agenda`"
+  },
+  "P1-16-013": {
+    "section": 16,
+    "text": "- `set-processing`"
+  },
+  "P1-16-014": {
+    "section": 16,
+    "text": "- `raise-exception`"
+  },
+  "P1-16-015": {
+    "section": 16,
+    "text": "- `review-queue`"
+  },
+  "P1-16-016": {
+    "section": 16,
+    "text": "- `closeout-record`"
+  },
+  "P1-16-017": {
+    "section": 16,
+    "text": "- `plan-repair`"
+  },
+  "P1-16-018": {
+    "section": 16,
+    "text": "- `apply-repair`"
+  },
+  "P1-16-019": {
+    "section": 16,
+    "text": "Use `python -m memory.cli` as the primary entry point."
+  },
+  "P1-16-020": {
+    "section": 16,
+    "text": "Keep `tools/validate.py` only as a compatibility wrapper if useful."
+  },
+  "P1-16-021": {
+    "section": 16,
+    "text": "All write operations must validate their input before modification and be safe for ordinary Git review."
+  },
+  "P1-16-022": {
+    "section": 16,
+    "text": "The command layer performs deterministic record handling."
+  },
+  "P1-16-023": {
+    "section": 16,
+    "text": "It does not independently interpret a conversation into accepted decisions, invent commitments, or settle source contradictions."
+  },
+  "P1-16-024": {
+    "section": 16,
+    "text": "Exact CLI arguments, outputs and exit codes are in `docs/SETUP.md` and the operating procedures."
+  },
+  "P1-18-001": {
+    "section": 18,
+    "text": "Machine-readable contract data is maintained in contracts/."
+  },
+  "P1-18-002": {
+    "section": 18,
+    "text": "Every mandatory architectural and operational behavior has a stable requirement identity."
+  },
+  "P1-18-019": {
+    "section": 18,
+    "text": "The requirements matrix must derive from this specification, not from the current code."
+  },
+  "P1-18-022": {
+    "section": 18,
+    "text": "Preserve the full architectural contract and its requirement meanings."
+  },
+  "P1-20-001": {
+    "section": 20,
+    "text": "The following require actual environment/account access independently of local record handling:"
+  },
+  "P1-20-002": {
+    "section": 20,
+    "text": "- Live Claude capture access beyond the included supported native parser."
+  },
+  "P1-20-003": {
+    "section": 20,
+    "text": "- Live Codex capture access beyond the included supported native parser."
+  },
+  "P1-20-004": {
+    "section": 20,
+    "text": "- Live Grok capture access beyond the included supported native parser."
+  },
+  "P1-20-005": {
+    "section": 20,
+    "text": "- Muse-native capture and format compatibility in the user\u2019s actual environment."
+  },
+  "P1-20-006": {
+    "section": 20,
+    "text": "- Access to proprietary native session stores in the chosen environment."
+  },
+  "P1-20-007": {
+    "section": 20,
+    "text": "- User review of the meaning of actual conversational evidence."
+  },
+  "P1-20-008": {
+    "section": 20,
+    "text": "- Repository/tool access in each environment used for a live cross-provider handoff."
+  },
+  "P1-20-009": {
+    "section": 20,
+    "text": "- Explicit configuration and verification of an external recurring watchdog."
+  },
+  "P1-20-010": {
+    "section": 20,
+    "text": "These operations use the permissions, interfaces and evidence actually available to the user."
+  },
+  "P1-20-011": {
+    "section": 20,
+    "text": "A local format check does not grant live account access or authorize an external operation."
+  },
+  "P1-20-012": {
+    "section": 20,
+    "text": "Native and generic import paths preserve the same source, identity and approval invariants."
+  },
+  "P1-21-012": {
+    "section": 21,
+    "text": "Report the actual unfinished record or operation and the action needed to complete it."
+  },
+  "P1-21-013": {
+    "section": 21,
+    "text": "Record observed operation results accurately."
+  },
+  "P1-21-024": {
+    "section": 21,
+    "text": "Merge and publication follow the user\u2019s explicit approval and repository controls."
+  },
+  "P1-21-026": {
+    "section": 21,
+    "text": "Stop at the completed authorized scope and report the observed result."
+  },
+  "P1-21-027": {
+    "section": 21,
+    "text": "**Preserve the working architecture, canonical records and user-approved operation boundaries.**"
+  },
+  "P1-17-001": {
+    "section": 17,
+    "text": "Examples and automated checks use explicitly fictional source material."
+  },
+  "P1-17-002": {
+    "section": 17,
+    "text": "Integrity handling distinguishes valid scenarios from deliberately invalid states."
+  },
+  "P1-17-003": {
+    "section": 17,
+    "text": "Two conversations share one original export."
+  },
+  "P1-17-004": {
+    "section": 17,
+    "text": "Both register successfully with distinct SOT IDs."
+  },
+  "P1-17-005": {
+    "section": 17,
+    "text": "The original export is preserved once."
+  },
+  "P1-17-006": {
+    "section": 17,
+    "text": "Reimporting the same conversation is idempotent."
+  },
+  "P1-17-007": {
+    "section": 17,
+    "text": "An expanded export preserves the earlier version."
+  },
+  "P1-17-008": {
+    "section": 17,
+    "text": "A conflicting export is flagged, not overwritten."
+  },
+  "P1-17-009": {
+    "section": 17,
+    "text": "Verify hashes, message counts, role totals, message IDs, anchor uniqueness, topic references, and registered attachments."
+  },
+  "P1-17-010": {
+    "section": 17,
+    "text": "Introduce incorrect values individually and require validation failures."
+  },
+  "P1-17-011": {
+    "section": 17,
+    "text": "One SOT contains three subjects in overlapping and noncontiguous message ranges."
+  },
+  "P1-17-012": {
+    "section": 17,
+    "text": "All three subjects reference the same original SOT."
+  },
+  "P1-17-013": {
+    "section": 17,
+    "text": "No duplicate original archive is created."
+  },
+  "P1-17-014": {
+    "section": 17,
+    "text": "Three conversations establish an original position, reject an alternative, and later introduce unresolved evidence."
+  },
+  "P1-17-015": {
+    "section": 17,
+    "text": "The established current position remains correct."
+  },
+  "P1-17-016": {
+    "section": 17,
+    "text": "The complete historical reasoning is retained."
+  },
+  "P1-17-017": {
+    "section": 17,
+    "text": "The unresolved evidence is not silently promoted into a new decision."
+  },
+  "P1-17-018": {
+    "section": 17,
+    "text": "Create two distinct subjects with similar names."
+  },
+  "P1-17-019": {
+    "section": 17,
+    "text": "Register aliases."
+  },
+  "P1-17-020": {
+    "section": 17,
+    "text": "Verify unambiguous lookup, rename stability, and detection of colliding aliases."
+  },
+  "P1-17-021": {
+    "section": 17,
+    "text": "Do not silently merge identities."
+  },
+  "P1-17-022": {
+    "section": 17,
+    "text": "Create an activity with multiple status transitions, external interactions, deadlines, intermediate outcomes, and pending external results."
+  },
+  "P1-17-023": {
+    "section": 17,
+    "text": "Verify the historical operational narrative and resumption metadata."
+  },
+  "P1-17-024": {
+    "section": 17,
+    "text": "Completion without an external outcome must remain valid."
+  },
+  "P1-17-025": {
+    "section": 17,
+    "text": "A valid reciprocal parent/child pair must pass."
+  },
+  "P1-17-026": {
+    "section": 17,
+    "text": "A valid three-level hierarchy must pass."
+  },
+  "P1-17-027": {
+    "section": 17,
+    "text": "A missing reciprocal reference must fail."
+  },
+  "P1-17-028": {
+    "section": 17,
+    "text": "A genuine hierarchy cycle must fail."
+  },
+  "P1-17-029": {
+    "section": 17,
+    "text": "A genuine dependency cycle must fail."
+  },
+  "P1-17-030": {
+    "section": 17,
+    "text": "A succession cycle must fail."
+  },
+  "P1-17-031": {
+    "section": 17,
+    "text": "A valid dependency between related hierarchical records must not be rejected merely because of the hierarchy."
+  },
+  "P1-17-032": {
+    "section": 17,
+    "text": "Test dates before and after local midnight, daylight-saving transitions, date-only commitments, unknown dates, cancelled events, and completed obligations."
+  },
+  "P1-17-033": {
+    "section": 17,
+    "text": "Ensure the agenda and daily audit behave correctly."
+  },
+  "P1-17-034": {
+    "section": 17,
+    "text": "Using only synthetic repository contents, resolve a subject by alias, retrieve its current state, associated work, source chain, and resumption context."
+  },
+  "P1-17-035": {
+    "section": 17,
+    "text": "Recovered state comes from repository records rather than an earlier process\u2019s memory."
+  },
+  "P1-17-036": {
+    "section": 17,
+    "text": "Use a temporary local bare Git remote."
+  },
+  "P1-17-037": {
+    "section": 17,
+    "text": "Create separate preservation and derived commits."
+  },
+  "P1-17-038": {
+    "section": 17,
+    "text": "Push and verify them."
+  },
+  "P1-17-039": {
+    "section": 17,
+    "text": "Create and push a later receipt commit."
+  },
+  "P1-17-040": {
+    "section": 17,
+    "text": "Advance the repository afterward."
+  },
+  "P1-17-041": {
+    "section": 17,
+    "text": "Verify the earlier closeout remains valid."
+  },
+  "P1-17-042": {
+    "section": 17,
+    "text": "Reject forged or missing evidence."
+  },
+  "P1-17-043": {
+    "section": 17,
+    "text": "Interrupt a synthetic import or closeout after source preservation."
+  },
+  "P1-17-044": {
+    "section": 17,
+    "text": "Resume from the last verified checkpoint."
+  },
+  "P1-17-045": {
+    "section": 17,
+    "text": "Confirm the source is not duplicated and the resulting indexes reconcile."
+  },
+  "P1-17-046": {
+    "section": 17,
+    "text": "Create two independent branches from the same base SHA."
+  },
+  "P1-17-047": {
+    "section": 17,
+    "text": "Test unrelated compatible updates and conflicting updates to the same canonical record."
+  },
+  "P1-17-048": {
+    "section": 17,
+    "text": "Prove no last-writer-wins data loss."
+  },
+  "P1-17-049": {
+    "section": 17,
+    "text": "Compare the repository worktree and tracked-file checksums before and after each audit."
+  },
+  "P1-17-050": {
+    "section": 17,
+    "text": "No canonical tracked file may be changed."
+  },
+  "P1-17-051": {
+    "section": 17,
+    "text": "For every mandatory validator invariant, include at least one fixture in which violating that invariant produces the expected finding."
+  },
+  "P1-17-052": {
+    "section": 17,
+    "text": "Record checks cover populated records and invalid states as well as empty registries."
+  },
+  "P1-18-003": {
+    "section": 18,
+    "text": "Each row must contain:"
+  },
+  "P1-18-004": {
+    "section": 18,
+    "text": "- Requirement ID"
+  },
+  "P1-18-005": {
+    "section": 18,
+    "text": "- Exact requirement"
+  },
+  "P1-18-006": {
+    "section": 18,
+    "text": "- Authoritative record or schema"
+  },
+  "P1-18-007": {
+    "section": 18,
+    "text": "- Implementation path/function"
+  },
+  "P1-18-008": {
+    "section": 18,
+    "text": "- Governing procedure"
+  },
+  "P1-18-009": {
+    "section": 18,
+    "text": "- Positive test"
+  },
+  "P1-18-010": {
+    "section": 18,
+    "text": "- Negative test where applicable"
+  },
+  "P1-18-011": {
+    "section": 18,
+    "text": "- Actual result"
+  },
+  "P1-18-012": {
+    "section": 18,
+    "text": "- Completion status"
+  },
+  "P1-18-013": {
+    "section": 18,
+    "text": "- Evidence or limitation"
+  },
+  "P1-18-020": {
+    "section": 18,
+    "text": "Maintain an explicit binding for every active requirement when changing the software."
+  },
+  "P1-18-021": {
+    "section": 18,
+    "text": "The repository's design documentation must be reconciled to this specification."
+  },
+  "P1-19-001": {
+    "section": 19,
+    "text": "Maintenance follows these dependencies:"
+  },
+  "P1-19-002": {
+    "section": 19,
+    "text": "1. Preserve the intended repository state and inspect current changes."
+  },
+  "P1-19-003": {
+    "section": 19,
+    "text": "2. Read the current architectural specification."
+  },
+  "P1-19-004": {
+    "section": 19,
+    "text": "3. Keep schemas and templates aligned."
+  },
+  "P1-19-005": {
+    "section": 19,
+    "text": "4. Preserve canonical reader/writer behavior."
+  },
+  "P1-19-006": {
+    "section": 19,
+    "text": "5. Preserve permanent identity and SOT registration behavior."
+  },
+  "P1-19-007": {
+    "section": 19,
+    "text": "6. Maintain knowledge identity and source-chain validation."
+  },
+  "P1-19-008": {
+    "section": 19,
+    "text": "7. Preserve canonical Markdown WORK records."
+  },
+  "P1-19-009": {
+    "section": 19,
+    "text": "8. Maintain lifecycle and relationship rules."
+  },
+  "P1-19-010": {
+    "section": 19,
+    "text": "9. Preserve agenda and time-zone semantics."
+  },
+  "P1-19-011": {
+    "section": 19,
+    "text": "10. Keep session instructions aligned with the actual interface."
+  },
+  "P1-19-012": {
+    "section": 19,
+    "text": "11. Preserve source and reconciliation transaction separation."
+  },
+  "P1-19-013": {
+    "section": 19,
+    "text": "12. Preserve concurrency and recovery controls."
+  },
+  "P1-19-014": {
+    "section": 19,
+    "text": "13. Preserve receipt and remote-verification requirements."
+  },
+  "P1-19-015": {
+    "section": 19,
+    "text": "14. Maintain configured finding-only audit behavior."
+  },
+  "P1-19-016": {
+    "section": 19,
+    "text": "15. Maintain synthetic integration and invalid-state coverage."
+  },
+  "P1-19-017": {
+    "section": 19,
+    "text": "16. Keep operating documentation consistent with the implementation."
+  },
+  "P1-19-018": {
+    "section": 19,
+    "text": "17. Keep machine-readable contract references consistent."
+  },
+  "P1-19-019": {
+    "section": 19,
+    "text": "18. Run the complete applicable verification suite."
+  },
+  "P1-19-020": {
+    "section": 19,
+    "text": "19. Verify configured CI within the approved operation."
+  },
+  "P1-19-021": {
+    "section": 19,
+    "text": "20. Publish only the approved change through the normal repository workflow."
+  },
+  "P1-19-022": {
+    "section": 19,
+    "text": "Preserve compatible runtime behavior when modifying the software."
+  },
+  "P1-19-023": {
+    "section": 19,
+    "text": "Remove obsolete code, schemas, templates, and documentation that contradict the authoritative architecture."
+  },
+  "P1-19-024": {
+    "section": 19,
+    "text": "Do not retain a compatibility mechanism that silently permits invalid legacy records."
+  },
+  "P1-21-002": {
+    "section": 21,
+    "text": "1. Preserve the authoritative architectural specification in the repository."
+  },
+  "P1-21-003": {
+    "section": 21,
+    "text": "2. Every mandatory requirement is traced."
+  },
+  "P1-21-004": {
+    "section": 21,
+    "text": "3. Canonical record structures match the specification."
+  },
+  "P1-21-005": {
+    "section": 21,
+    "text": "4. Schemas and generators agree."
+  },
+  "P1-21-006": {
+    "section": 21,
+    "text": "5. Operating procedures are executable and internally consistent."
+  },
+  "P1-21-007": {
+    "section": 21,
+    "text": "6. All required synthetic positive and negative tests pass."
+  },
+  "P1-21-009": {
+    "section": 21,
+    "text": "7. Configured CI results are reported for the operation actually run."
+  },
+  "P1-21-010": {
+    "section": 21,
+    "text": "8. Verification examples do not modify a user\u2019s personal memory."
+  },
+  "P1-21-011": {
+    "section": 21,
+    "text": "9. Only authorized changes enter the authoritative branch."
+  }
+}

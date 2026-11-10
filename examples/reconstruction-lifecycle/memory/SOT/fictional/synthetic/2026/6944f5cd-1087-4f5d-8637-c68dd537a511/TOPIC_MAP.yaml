@@ -1,0 +1,24 @@
+record_type: topic_map
+schema_version: 1
+sot_id: 6944f5cd-1087-4f5d-8637-c68dd537a511
+topics:
+- topic_id: 8b1409e6-8398-4222-b6d1-9b9568d10e33
+  label: Cedar courtyard irrigation and narrative review
+  provisional: false
+  message_ids:
+  - f4ab102e-ad25-4b23-b59d-5a9a1befb578
+  - 986c8b03-9329-4e50-bdd7-56961038789f
+  - a5eeb8eb-daac-4d4f-95f8-3db17f038ab0
+  subject_ids:
+  - 3818f1f1-ff07-42a6-8eca-577bbcecf21d
+  decisions_stated:
+  - I approve the corrected final narrative for this fictional example. Use a concise
+    CURRENT with links to the complete evolution and final narrative; preserve the
+    draft.
+  revisions:
+  - I approve the corrected final narrative for this fictional example. Use a concise
+    CURRENT with links to the complete evolution and final narrative; preserve the
+    draft.
+  open_questions: []
+  experiments_and_results: []
+  artifact_ids: []

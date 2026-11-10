@@ -1,0 +1,2149 @@
+{
+  "operator_or_environment_obligations": [
+    {
+      "id": "P1-01-010",
+      "text": "A fresh LLM, without access to previous conversations, must be able to open the private repository, identify the intended subject or work item, recover the relevant historical reasoning and established current position, identify pending actions and outcomes, and resume without the user reconstructing prior context.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SESSION_OPEN.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SESSION_OPEN.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SESSION_OPEN.md",
+          "assertion": "A fresh LLM, without access to previous conversations, must be able to open the private repository, identify the intended subject or work item, recover the relevant historical reasoning and established current position, identify pending actions and outcomes, and resume without the user reconstructing prior context. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "2f802c462dfdc52a54282ffe598e35cc5552ae6fe7edf511f154226db033c670",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-01-011",
+      "text": "At closeout, an LLM with supported provider-native transcript access must preserve original evidence, reconcile the affected knowledge and operational records, verify Git persistence, and provide a truthful completion receipt.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SESSION_OPEN.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SESSION_OPEN.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SESSION_OPEN.md",
+          "assertion": "At closeout, an LLM with supported provider-native transcript access must preserve original evidence, reconcile the affected knowledge and operational records, verify Git persistence, and provide a truthful completion receipt. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "1685a299a12690f8b7b0e84362533e343e9a7c02ac3276e83850f1b9761ec3fe",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-05-010",
+      "text": "Distinguish:",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SOT_IMPORT.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SOT_IMPORT.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SOT_IMPORT.md",
+          "assertion": "Distinguish: Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "5fc5c928c6b5f63442545e082b04564620ed1b1df651dfbec54d739e0c0c90d5",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-05-011",
+      "text": "- `complete`: all messages and relevant attachments known to be present under the verified capture scope.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SOT_IMPORT.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SOT_IMPORT.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SOT_IMPORT.md",
+          "assertion": "- `complete`: all messages and relevant attachments known to be present under the verified capture scope. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "eb96dd56c175c896721fba53a79515eb0c52bd2609dbd13321e84ca95c937a8d",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-05-012",
+      "text": "- `partial`: known omissions or inaccessible sections.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SOT_IMPORT.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SOT_IMPORT.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SOT_IMPORT.md",
+          "assertion": "- `partial`: known omissions or inaccessible sections. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "09b2978ee5f8fdf7a52ab9ffdb5673e3bce71706bcfbab4899c76fd559b080e6",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-05-013",
+      "text": "- `unknown`: no adequate evidence to establish completeness.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SOT_IMPORT.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SOT_IMPORT.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SOT_IMPORT.md",
+          "assertion": "- `unknown`: no adequate evidence to establish completeness. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "2871b1b54a207ad2efc43a4a4786d745c01df336d854fc697d3391165e14b979",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-05-014",
+      "text": "Do not infer completeness from the apparent last message or a model's context window.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SOT_IMPORT.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SOT_IMPORT.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SOT_IMPORT.md",
+          "assertion": "Do not infer completeness from the apparent last message or a model's context window. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "2e52d912806e1724c99c59dafcdb06556c4c384cdea4351bb4f1a86508888e45",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-05-015",
+      "text": "Never reconstruct a complete native transcript from remembered or summarized conversation content.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SOT_IMPORT.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SOT_IMPORT.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SOT_IMPORT.md",
+          "assertion": "Never reconstruct a complete native transcript from remembered or summarized conversation content. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "02b33daa883c89b62f44c5146c20b50b9e8de70f741e3f1479961ba2036bf143",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-05-016",
+      "text": "When source capture is unavailable, report the limitation and leave the operation incomplete.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SOT_IMPORT.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SOT_IMPORT.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SOT_IMPORT.md",
+          "assertion": "When source capture is unavailable, report the limitation and leave the operation incomplete. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "13c2fbee477273413e0d077df9ad4298258d865aa0ad5ca2fe6bb52ca18c3f2b",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-06-038",
+      "text": "A conversation with no durable knowledge or work contribution may be marked `not_applicable` for that integration, with an evidence-backed reason.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SOT_IMPORT.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SOT_IMPORT.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SOT_IMPORT.md",
+          "assertion": "A conversation with no durable knowledge or work contribution may be marked `not_applicable` for that integration, with an evidence-backed reason. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "062f7dd800ecd04e2f859618ea65575a181474254d915c95750a22e64e304515",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-06-058",
+      "text": "Do not rewrite original quoted content as an interpretation.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SOT_IMPORT.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SOT_IMPORT.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SOT_IMPORT.md",
+          "assertion": "Do not rewrite original quoted content as an interpretation. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "9150517c9686170fa3b7230979e37c1bead2263e3f8bf371feaab6d20c5d488d",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-044",
+      "text": "The document describes the most recent **established** position, not merely the latest imported statement.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "The document describes the most recent **established** position, not merely the latest imported statement. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "4afc52aaae71ebe4713a7943bdce149c0c6e1a4c668e9957590a132151135327",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-045",
+      "text": "An unresolved suggestion cannot supersede an accepted decision.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "An unresolved suggestion cannot supersede an accepted decision. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "fc4d4ffac6ba5e19c8c7e2b36e0c05b041feee490a26947c722acd9edb632f41",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-046",
+      "text": "Unknowns must be explicit.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "Unknowns must be explicit. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "51c309fac5c38ba4c25224f2d4961a29100bebad025831433c5cf56ffc631a49",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-047",
+      "text": "Retain chronological entries describing:",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "Retain chronological entries describing: Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "6f36732c87eedb8f9ada7166e733f6b7fd54cb120669333fa6285400ea5fb261",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-048",
+      "text": "- Original observation or position",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "- Original observation or position Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "1689668052870ffa170b5027a75b83e8e34e57e4e1ca977328fa3148b1803949",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-049",
+      "text": "- Later developments",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "- Later developments Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "de0883ef688ee099182888344f2ead1e044dfe786d6584b8dbcf83b6e7236f85",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-050",
+      "text": "- Alternatives considered",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "- Alternatives considered Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "2e0359107774315dbb972fc8c2f2122ed61d420b243e4faf7343e73ca5fedb08",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-051",
+      "text": "- Rejected approaches and reasons",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "- Rejected approaches and reasons Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "012759dffea75e3cc2e1a93e798af3305d56660c36ac4d6c23f6211c498102a2",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-052",
+      "text": "- Decisions",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "- Decisions Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "d187aa733a37b1d1ce171a2d319aa8ad2bec85e01a383317b29301e50520d79f",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-053",
+      "text": "- Revisions",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "- Revisions Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "0eda7babf590842c8950e9991957ba00bb59b99f5794d078f37dcbdd930cd9d0",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-054",
+      "text": "- Contradictory evidence",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "- Contradictory evidence Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "48af0d35fb78deae6c496584ec18e263afa1a692f9f33836871f0b526ea2d88f",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-055",
+      "text": "- Supersession relationships",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "- Supersession relationships Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "843160d21e2d77a86b44e0065dfb34ab255c3493bb6ac76e0a8a3c0e72d8ef7b",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-056",
+      "text": "- Remaining uncertainty",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "- Remaining uncertainty Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "1bd5f277ec6a05bed64c89cf8d28917301b61ebd4940e4960c607b90faa56443",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-057",
+      "text": "- Supporting SOT/message references",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "- Supporting SOT/message references Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "8e170d01dcaf6b9e67e2dfdda54d352564e9885d36bb30df4d5a419aa4f98225",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-070",
+      "text": "A model may identify candidate subjects and proposed interpretations.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "A model may identify candidate subjects and proposed interpretations. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "07d7ceb27fa69b33c01ba58616f42b072c623a354f62de5dbb0b9413ea416db0",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-071",
+      "text": "It may not silently promote a candidate into an established user-approved position.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "It may not silently promote a candidate into an established user-approved position. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "3f1ea450ab09fce1ec87f746eebec821c4088a8e8a539dfe79a560bbda870614",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-073",
+      "text": "Structural validation must not pretend to establish interpretive truth.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "Structural validation must not pretend to establish interpretive truth. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "4e3f83177a83a1e1f282ea25f0e58e5616faeecc227b868a1adfd05b6e6a420e",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-07-074",
+      "text": "Do not create a subject for every passing mention.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SUBJECT_MAINTENANCE.md",
+          "assertion": "Do not create a subject for every passing mention. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "e8071eed72e33352cf10cbfcd9e32ce94f2c70c989c758cddcc1fafc4821940a",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-08-026",
+      "text": "A new work item must be created only for a material pursuit, commitment, experiment, application, external engagement, or activity that needs continuity.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/WORK_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+          "assertion": "A new work item must be created only for a material pursuit, commitment, experiment, application, external engagement, or activity that needs continuity. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "31edb9a776060d2a4b3f90601412696ff584fc39651d853e181f6cdf0fe1463c",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-08-027",
+      "text": "Trivial isolated tasks do not require permanent work records.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/WORK_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+          "assertion": "Trivial isolated tasks do not require permanent work records. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "d420addfbd843a7e159f5c55953d627a78bf7068c76f33d8512a59677979c368",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-08-039",
+      "text": "`completed` means the defined activity was performed.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/WORK_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+          "assertion": "`completed` means the defined activity was performed. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "e32a85c236e87f73526a441f7a45e28c4e72bec176a839bfddebad1a42eedd53",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-08-040",
+      "text": "`awaiting_outcome` means an external result is still pending.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/WORK_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+          "assertion": "`awaiting_outcome` means an external result is still pending. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "a87e5deb258307e3d144eca03702598b69c42fe0865d9e6e62f03f62d1eebc0e",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-08-041",
+      "text": "`closed` means the activity reached a recorded endpoint, including an explicit ending without the hoped-for result.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/WORK_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+          "assertion": "`closed` means the activity reached a recorded endpoint, including an explicit ending without the hoped-for result. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "75f98a28bd444885716bcded75b516b149eb826ff6f27bd4c097dc87a524aaec",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-08-068",
+      "text": "Do not invent a next action.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/WORK_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+          "assertion": "Do not invent a next action. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "78cd281bf8a111aa938f76b5b8c57aa0ab40b29ff92c96fd39f992acd2d402b7",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-08-077",
+      "text": "- External verification information where applicable",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/WORK_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+          "assertion": "- External verification information where applicable Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "8f7ddea4328b83243c19b38ffc5ef6b18d487e6f440d02c7a05d1efc6c8ec7aa",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-08-091",
+      "text": "Unknowns must not be filled with model-generated assumptions.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/WORK_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+          "assertion": "Unknowns must not be filled with model-generated assumptions. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "2152541485c0b16eb3348db525aa5357f5f0a303538352367b49601f3b420f28",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-08-100",
+      "text": "These sections preserve the substance needed to resume a complicated activity, not merely status metadata.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/WORK_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+          "assertion": "These sections preserve the substance needed to resume a complicated activity, not merely status metadata. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "5dacda586f6dd91974d754ca25d9e72ffddfe159480355c16d5db7c96db61596",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-08-101",
+      "text": "The validator checks their existence and structural completeness. A model or human reviews their meaning.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/WORK_MAINTENANCE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/WORK_MAINTENANCE.md",
+          "assertion": "The validator checks their existence and structural completeness. A model or human reviews their meaning. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "f49f234658a5788dc00f9ccf4cd7b787a156e434b19a8254f859a67c76f2fe82",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-10-001",
+      "text": "`CONTEXT/` contains durable, broadly applicable preferences, working methods, writing style, and resources.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "`CONTEXT/` contains durable, broadly applicable preferences, working methods, writing style, and resources. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "541ed11f271c1d33fd999558613e19ade39f0af03737de277c778456b241c5d9",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-10-002",
+      "text": "Do not populate these files with invented personal facts.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "Do not populate these files with invented personal facts. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "fff4402aa9109719ca7c919d321d699a742245bf75a3160b09a5697f1f4e1e8a",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-10-003",
+      "text": "Only durable user-established information belongs here.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "Only durable user-established information belongs here. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "8f82b772519d4ee2d4261567aec6db3d51f28ea33a8adfc42671006b1beea8ff",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-10-004",
+      "text": "Do not promote a single situational preference into a global instruction without evidence.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "Do not promote a single situational preference into a global instruction without evidence. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "80a9306a84b13f822136b403880d3f61e1855ff68d1457d89bf529e1a6575a02",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-12-009",
+      "text": "Identify every materially affected subject and work record.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SESSION_CLOSE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SESSION_CLOSE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SESSION_CLOSE.md",
+          "assertion": "Identify every materially affected subject and work record. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "de702662ab3e6d7e741fc507b7811266180f5485dec3a0081de7ded82d903aeb",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-12-015",
+      "text": "Preserve historical reasoning, accepted decisions, revisions, outcomes, obligations, and unresolved issues.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SESSION_CLOSE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SESSION_CLOSE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SESSION_CLOSE.md",
+          "assertion": "Preserve historical reasoning, accepted decisions, revisions, outcomes, obligations, and unresolved issues. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "4c26c4584f330fa35a5a0c5b29c01b931b3c919af1ec86c1b65784f61cca00f2",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-12-022",
+      "text": "- Reconcile compatible overlapping changes without losing either.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SESSION_CLOSE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SESSION_CLOSE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SESSION_CLOSE.md",
+          "assertion": "- Reconcile compatible overlapping changes without losing either. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "d7530952c8dcfcb3d9bfdbdfa0b5334f1747f778364f2ccee96700a13a40623f",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-12-023",
+      "text": "- Preserve competing evidence when meaning conflicts.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SESSION_CLOSE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SESSION_CLOSE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SESSION_CLOSE.md",
+          "assertion": "- Preserve competing evidence when meaning conflicts. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "c07a62def10b1d9b910ce795c31268f6f8e7d6b6c9248f44282844f5eba10e4c",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-12-024",
+      "text": "- Escalate unresolved authoritative contradictions for user judgment.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/SESSION_CLOSE.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/SESSION_CLOSE.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/SESSION_CLOSE.md",
+          "assertion": "- Escalate unresolved authoritative contradictions for user judgment. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "534d7d995f4e4386166267ee00c69d84583d4071bf1a93c68d217c6631e4a2b8",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-20-002",
+      "text": "- Live Claude capture access beyond the included supported native parser.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "approved_deferral",
+      "requirement_kind": "deferred_provider_specific",
+      "status": "deferred_provider_specific",
+      "issue_type": "none",
+      "record_schema": "Binding required",
+      "implementation": [],
+      "procedure": "docs/ARCHITECTURE_SPEC.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [],
+      "negative_test_applicability": "Review the current binding",
+      "result": "Requires evidence for the actual external operation",
+      "applicability": "Environment-specific operation requiring actual access/review"
+    },
+    {
+      "id": "P1-20-003",
+      "text": "- Live Codex capture access beyond the included supported native parser.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "approved_deferral",
+      "requirement_kind": "deferred_provider_specific",
+      "status": "deferred_provider_specific",
+      "issue_type": "none",
+      "record_schema": "Binding required",
+      "implementation": [],
+      "procedure": "docs/ARCHITECTURE_SPEC.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [],
+      "negative_test_applicability": "Review the current binding",
+      "result": "Requires evidence for the actual external operation",
+      "applicability": "Environment-specific operation requiring actual access/review"
+    },
+    {
+      "id": "P1-20-004",
+      "text": "- Live Grok capture access beyond the included supported native parser.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "approved_deferral",
+      "requirement_kind": "deferred_provider_specific",
+      "status": "deferred_provider_specific",
+      "issue_type": "none",
+      "record_schema": "Binding required",
+      "implementation": [],
+      "procedure": "docs/ARCHITECTURE_SPEC.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [],
+      "negative_test_applicability": "Review the current binding",
+      "result": "Requires evidence for the actual external operation",
+      "applicability": "Environment-specific operation requiring actual access/review"
+    },
+    {
+      "id": "P1-20-005",
+      "text": "- Muse-native capture and format compatibility in the user’s actual environment.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "approved_deferral",
+      "requirement_kind": "deferred_provider_specific",
+      "status": "deferred_provider_specific",
+      "issue_type": "none",
+      "record_schema": "Binding required",
+      "implementation": [],
+      "procedure": "docs/ARCHITECTURE_SPEC.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [],
+      "negative_test_applicability": "Review the current binding",
+      "result": "Requires evidence for the actual external operation",
+      "applicability": "Environment-specific operation requiring actual access/review"
+    },
+    {
+      "id": "P1-20-006",
+      "text": "- Access to proprietary native session stores in the chosen environment.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "approved_deferral",
+      "requirement_kind": "deferred_provider_specific",
+      "status": "deferred_provider_specific",
+      "issue_type": "none",
+      "record_schema": "Binding required",
+      "implementation": [],
+      "procedure": "docs/ARCHITECTURE_SPEC.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [],
+      "negative_test_applicability": "Review the current binding",
+      "result": "Requires evidence for the actual external operation",
+      "applicability": "Environment-specific operation requiring actual access/review"
+    },
+    {
+      "id": "P1-20-007",
+      "text": "- User review of the meaning of actual conversational evidence.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "approved_deferral",
+      "requirement_kind": "deferred_provider_specific",
+      "status": "deferred_provider_specific",
+      "issue_type": "none",
+      "record_schema": "Binding required",
+      "implementation": [],
+      "procedure": "docs/ARCHITECTURE_SPEC.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [],
+      "negative_test_applicability": "Review the current binding",
+      "result": "Requires evidence for the actual external operation",
+      "applicability": "Environment-specific operation requiring actual access/review"
+    },
+    {
+      "id": "P1-20-008",
+      "text": "- Repository/tool access in each environment used for a live cross-provider handoff.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "approved_deferral",
+      "requirement_kind": "deferred_provider_specific",
+      "status": "deferred_provider_specific",
+      "issue_type": "none",
+      "record_schema": "Binding required",
+      "implementation": [],
+      "procedure": "docs/ARCHITECTURE_SPEC.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [],
+      "negative_test_applicability": "Review the current binding",
+      "result": "Requires evidence for the actual external operation",
+      "applicability": "Environment-specific operation requiring actual access/review"
+    },
+    {
+      "id": "P1-20-009",
+      "text": "- Explicit configuration and verification of an external recurring watchdog.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "approved_deferral",
+      "requirement_kind": "deferred_provider_specific",
+      "status": "deferred_provider_specific",
+      "issue_type": "none",
+      "record_schema": "Binding required",
+      "implementation": [],
+      "procedure": "docs/ARCHITECTURE_SPEC.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [],
+      "negative_test_applicability": "Review the current binding",
+      "result": "Requires evidence for the actual external operation",
+      "applicability": "Environment-specific operation requiring actual access/review"
+    },
+    {
+      "id": "P1-19-001",
+      "text": "Maintenance follows these dependencies:",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "Maintenance follows these dependencies: Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "8a7e76de785f5d259c6379573636043c88740e7d6534629a94ab42917738a008",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-002",
+      "text": "1. Preserve the intended repository state and inspect current changes.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "1. Preserve the intended repository state and inspect current changes. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "6981cca503434bba6199249990dff1d7313d65d1537b4d73aea4ceba51c22c59",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-003",
+      "text": "2. Read the current architectural specification.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "2. Read the current architectural specification. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "35f77b96d00e225375f177028d4270e9ac57bb6b37ebd60ef9ec008627b8771a",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-004",
+      "text": "3. Keep schemas and templates aligned.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "3. Keep schemas and templates aligned. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "2ee177b24af117aee9308737b53e3e5269fe83cb3f80bc05964d099a0868255e",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-005",
+      "text": "4. Preserve canonical reader/writer behavior.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "4. Preserve canonical reader/writer behavior. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "7c17093886c0877d9e09517ac74191f44dcc226a086ab7d19f5f260ab4939cdf",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-006",
+      "text": "5. Preserve permanent identity and SOT registration behavior.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "5. Preserve permanent identity and SOT registration behavior. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "ef140b6a9cfe12b4d389c695bff6109059d78e7bdf335e9de7ecf0d10662c600",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-007",
+      "text": "6. Maintain knowledge identity and source-chain validation.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "6. Maintain knowledge identity and source-chain validation. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "bd9b7f14af279f72ac4d3f50447f3ca683a6a45499e525b06cad1c8e76568e17",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-008",
+      "text": "7. Preserve canonical Markdown WORK records.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "7. Preserve canonical Markdown WORK records. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "a9ccbff3faf09ef873512747856914d546036250e74565157252b431ae8ecbc9",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-009",
+      "text": "8. Maintain lifecycle and relationship rules.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "8. Maintain lifecycle and relationship rules. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "f4f3f64e37ea0c50fd273b296f2f279e9d1ed47e7c0e79e3b3d8508d4c46fa4e",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-010",
+      "text": "9. Preserve agenda and time-zone semantics.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "9. Preserve agenda and time-zone semantics. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "d1cb7b821bd9268e0af7aa5cf36f78db0773ecabde6c542198746f0a1b6b863c",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-011",
+      "text": "10. Keep session instructions aligned with the actual interface.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "10. Keep session instructions aligned with the actual interface. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "dddcf809bfae8814e52a2b1c3273434b5b130b26e6def96d2de3d328764963e7",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-012",
+      "text": "11. Preserve source and reconciliation transaction separation.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "11. Preserve source and reconciliation transaction separation. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "d0e631db1064dd64a09a65fdf89a8c9f67bc431490f2815b68c83ce56ac6ee71",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-013",
+      "text": "12. Preserve concurrency and recovery controls.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "12. Preserve concurrency and recovery controls. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "9ce78738e4c48fc37fdc5c0a5c6d94d52cdcc9eb9fa246d58e25d327fab0b037",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-014",
+      "text": "13. Preserve receipt and remote-verification requirements.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "13. Preserve receipt and remote-verification requirements. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "d3a01a5057e0a428f5371166ab2f4056b81141550712bd84455dd42fb9e98811",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-015",
+      "text": "14. Maintain configured finding-only audit behavior.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "14. Maintain configured finding-only audit behavior. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "2208da0e5b57e77767529cba2ed16fecbbdea0ba37153772889c5158b458ecb6",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-016",
+      "text": "15. Maintain synthetic integration and invalid-state coverage.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "15. Maintain synthetic integration and invalid-state coverage. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "d1b1e3000ee495cdca38996900b84ea0ca19e33f4de7f7a66470e5c5724d7264",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-017",
+      "text": "16. Keep operating documentation consistent with the implementation.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "16. Keep operating documentation consistent with the implementation. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "e2f87c0599168fbf2c0999689fa070b34706ac57d35807bd918ded76aefccde4",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-018",
+      "text": "17. Keep machine-readable contract references consistent.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "17. Keep machine-readable contract references consistent. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "2e866b8b7dc54d0ab56dfd98e9c4af8471c23f66fd6b3f0e785eb0af8ef6d460",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-019",
+      "text": "18. Run the complete applicable verification suite.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "18. Run the complete applicable verification suite. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "17e26c554673742ccee92796ace981ba15615410a87090d0c090e6e68cd38570",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-020",
+      "text": "19. Verify configured CI within the approved operation.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "19. Verify configured CI within the approved operation. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "2d9d7910b6f27bab383e2fab8b4d5f5f0a04c79cedf4b47d4927617c0451e553",
+      "evaluation_scope": "actual_user_record_review"
+    },
+    {
+      "id": "P1-19-021",
+      "text": "20. Publish only the approved change through the normal repository workflow.",
+      "status_scope": "individual binding or actual user operation; not architectural completion",
+      "classification": "binding",
+      "requirement_kind": "human_evidence_review",
+      "status": "partial",
+      "issue_type": "human_review_required",
+      "record_schema": "Canonical metadata",
+      "implementation": [
+        "docs/OPERATIONS/RECONCILIATION.md",
+        "docs/ARCHITECTURE_SPEC.md"
+      ],
+      "procedure": "docs/OPERATIONS/RECONCILIATION.md",
+      "positive_tests": [],
+      "negative_tests": [],
+      "verification": [
+        {
+          "type": "human_review_required",
+          "ref": "docs/OPERATIONS/RECONCILIATION.md",
+          "assertion": "20. Publish only the approved change through the normal repository workflow. Review the actual source and obtain the required user decision for this operation."
+        }
+      ],
+      "negative_test_applicability": "Not applicable: verified by the named source/procedure/transaction review rather than a contrived forbidden action",
+      "result": "Apply the user-review procedure to the actual source record and requested interpretation.",
+      "applicability": "Preserve source scope, explicit unknowns, user decisions and the evidence supporting this record.",
+      "source_sha256": "26a97ddab991429dbde6901ea8d9f8f0bfe8d79d595e4dea65c12614db7a0374",
+      "evaluation_scope": "actual_user_record_review"
+    }
+  ]
+}

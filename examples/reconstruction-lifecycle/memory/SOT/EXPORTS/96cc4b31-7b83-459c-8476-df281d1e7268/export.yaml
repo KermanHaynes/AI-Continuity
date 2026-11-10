@@ -1,0 +1,13 @@
+record_type: sot_export
+schema_version: 1
+export_id: 96cc4b31-7b83-459c-8476-df281d1e7268
+provider: fictional
+environment: synthetic
+native_export_id: null
+source_files:
+- path: SOT/EXPORTS/96cc4b31-7b83-459c-8476-df281d1e7268/original.json
+  sha256: 941b124588b68c5cb2148bb8a11f4a19a99da83595b118084fc640f7be41f22e
+captured_at: '2026-11-09T20:05:21.622391+00:00'
+capture_completeness: complete
+capture_scope: Complete newly authored fictional fixture; not a real conversation
+previous_export_ids: []

@@ -1,0 +1,59 @@
+{
+  "scope": "pinned_installation_profile",
+  "dependencies": [
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "license": "MIT",
+      "source_url": null,
+      "notice_paths": [
+        "THIRD_PARTY_NOTICES/PyYAML/LICENSE"
+      ]
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "license": "MIT",
+      "source_url": null,
+      "notice_paths": [
+        "THIRD_PARTY_NOTICES/jsonschema/COPYING"
+      ]
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "license": "MIT",
+      "source_url": null,
+      "notice_paths": [
+        "THIRD_PARTY_NOTICES/attrs/LICENSE"
+      ]
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "license": "MIT",
+      "source_url": null,
+      "notice_paths": [
+        "THIRD_PARTY_NOTICES/jsonschema-specifications/COPYING"
+      ]
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "license": "MIT",
+      "source_url": null,
+      "notice_paths": [
+        "THIRD_PARTY_NOTICES/referencing/COPYING"
+      ]
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.9.1",
+      "license": "MIT",
+      "source_url": null,
+      "notice_paths": [
+        "THIRD_PARTY_NOTICES/rpds-py/LICENSE"
+      ]
+    }
+  ]
+}

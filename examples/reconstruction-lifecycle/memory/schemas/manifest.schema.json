@@ -1,0 +1,507 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "schema_version",
+    "sot_id",
+    "provider",
+    "environment",
+    "native_conversation_id",
+    "fingerprint",
+    "source_conversation_locator",
+    "title",
+    "export_ids",
+    "source_files",
+    "transcript_file",
+    "message_index_file",
+    "topic_map_file",
+    "topic_map_markdown_file",
+    "timestamps",
+    "attachment_inventory",
+    "counts",
+    "states",
+    "state_reasons",
+    "integrated_subject_ids",
+    "integrated_work_item_ids",
+    "capture_gaps",
+    "last_processed_at"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "sot_conversation"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "sot_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "provider": {
+      "type": "string",
+      "minLength": 1
+    },
+    "environment": {
+      "type": "string",
+      "minLength": 1
+    },
+    "native_conversation_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fingerprint": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_conversation_locator": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "export_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "source_files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "transcript_file": {
+      "const": "transcript.md"
+    },
+    "message_index_file": {
+      "const": "MESSAGES.yaml"
+    },
+    "topic_map_file": {
+      "anyOf": [
+        {
+          "const": "TOPIC_MAP.yaml"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "topic_map_markdown_file": {
+      "anyOf": [
+        {
+          "const": "TOPIC_MAP.md"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "timestamps": {
+      "type": "object",
+      "required": [
+        "original_started_at",
+        "original_ended_at",
+        "imported_at"
+      ],
+      "properties": {
+        "original_started_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "original_ended_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "imported_at": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "attachment_inventory": {
+      "type": "object",
+      "required": [
+        "expected_logical_attachments",
+        "inventory_verification",
+        "inventory_evidence",
+        "registered_logical_attachment_ids"
+      ],
+      "properties": {
+        "expected_logical_attachments": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "inventory_verification": {
+          "enum": [
+            "verified",
+            "partial",
+            "unknown"
+          ]
+        },
+        "inventory_evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "registered_logical_attachment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "total_messages",
+        "role_totals",
+        "user_turns",
+        "attachments",
+        "topics"
+      ],
+      "properties": {
+        "total_messages": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "role_totals": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "user_turns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "attachments": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "topics": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "states": {
+      "type": "object",
+      "required": [
+        "source_preservation",
+        "native_completeness",
+        "normalization",
+        "attachment_preservation",
+        "topic_indexing",
+        "knowledge_reconciliation",
+        "work_reconciliation"
+      ],
+      "properties": {
+        "source_preservation": {
+          "enum": [
+            "pending",
+            "in_progress",
+            "complete",
+            "blocked",
+            "not_applicable"
+          ]
+        },
+        "native_completeness": {
+          "enum": [
+            "pending",
+            "in_progress",
+            "complete",
+            "blocked",
+            "not_applicable"
+          ]
+        },
+        "normalization": {
+          "enum": [
+            "pending",
+            "in_progress",
+            "complete",
+            "blocked",
+            "not_applicable"
+          ]
+        },
+        "attachment_preservation": {
+          "enum": [
+            "pending",
+            "in_progress",
+            "complete",
+            "blocked",
+            "not_applicable"
+          ]
+        },
+        "topic_indexing": {
+          "enum": [
+            "pending",
+            "in_progress",
+            "complete",
+            "blocked",
+            "not_applicable"
+          ]
+        },
+        "knowledge_reconciliation": {
+          "enum": [
+            "pending",
+            "in_progress",
+            "complete",
+            "blocked",
+            "not_applicable"
+          ]
+        },
+        "work_reconciliation": {
+          "enum": [
+            "pending",
+            "in_progress",
+            "complete",
+            "blocked",
+            "not_applicable"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "state_reasons": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "integrated_subject_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+      },
+      "uniqueItems": true
+    },
+    "integrated_work_item_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+      },
+      "uniqueItems": true
+    },
+    "capture_gaps": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "last_processed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "archive_mode": {
+      "enum": [
+        "integrated",
+        "archive_only"
+      ]
+    },
+    "transcript_format": {
+      "enum": [
+        "foundation_v1",
+        "conversation_v1"
+      ]
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "status",
+        "history",
+        "pending_message_ids"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "unreviewed",
+            "in_review",
+            "reviewed"
+          ]
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "transcript_sha256",
+              "message_ids",
+              "completed_at",
+              "user_approval_evidence",
+              "subject_ids",
+              "work_item_ids",
+              "deferred_material"
+            ],
+            "properties": {
+              "transcript_sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "message_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+                },
+                "uniqueItems": true
+              },
+              "completed_at": {
+                "type": "string",
+                "minLength": 1
+              },
+              "user_approval_evidence": {
+                "type": "string",
+                "minLength": 1
+              },
+              "subject_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+                },
+                "uniqueItems": true
+              },
+              "work_item_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+                },
+                "uniqueItems": true
+              },
+              "deferred_material": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "pending_message_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "native_lineage": {
+      "type": "object",
+      "required": [
+        "forked_from_id",
+        "parent_thread_id"
+      ],
+      "properties": {
+        "forked_from_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "parent_thread_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "archive_mode"
+        ],
+        "properties": {
+          "archive_mode": {
+            "const": "archive_only"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "review",
+          "transcript_format"
+        ],
+        "properties": {
+          "topic_map_file": {
+            "type": "null"
+          },
+          "topic_map_markdown_file": {
+            "type": "null"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "topic_map_file": {
+            "const": "TOPIC_MAP.yaml"
+          },
+          "topic_map_markdown_file": {
+            "const": "TOPIC_MAP.md"
+          }
+        }
+      }
+    }
+  ]
+}

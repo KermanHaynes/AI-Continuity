@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "record_type",
+    "schema_version",
+    "transaction_id",
+    "starting_sha",
+    "state",
+    "affected_record_ids",
+    "reconciliation",
+    "preservation_commit",
+    "derived_commit",
+    "updated_at"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "processing_state"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "transaction_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "starting_sha": {
+      "type": "string",
+      "minLength": 1
+    },
+    "state": {
+      "enum": [
+        "native_capture_unavailable",
+        "captured_not_normalized",
+        "preserved_not_integrated",
+        "derived_incomplete",
+        "validation_failed",
+        "remote_push_failed",
+        "concurrent_semantic_conflict",
+        "verified_complete",
+        "archive_verified"
+      ]
+    },
+    "affected_record_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+      },
+      "uniqueItems": true
+    },
+    "reconciliation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "record_id",
+          "disposition",
+          "evidence"
+        ],
+        "properties": {
+          "record_id": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+          },
+          "disposition": {
+            "enum": [
+              "changed",
+              "verified_unchanged",
+              "not_applicable",
+              "incomplete"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "preservation_commit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "derived_commit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

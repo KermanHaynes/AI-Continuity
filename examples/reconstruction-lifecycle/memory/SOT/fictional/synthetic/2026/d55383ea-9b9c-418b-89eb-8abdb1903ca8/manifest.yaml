@@ -1,0 +1,81 @@
+record_type: sot_conversation
+schema_version: 1
+sot_id: d55383ea-9b9c-418b-89eb-8abdb1903ca8
+provider: fictional
+environment: synthetic
+native_conversation_id: fictional-c3
+fingerprint: 6b8d5cdf24bb764f348216747b7e511898a43e31a4339df5367cd5d068c022a3
+source_conversation_locator: null
+title: Cedar fault review
+export_ids:
+- 28a978fe-8b43-403d-9f4f-231272ed28ec
+source_files:
+- path: SOT/EXPORTS/28a978fe-8b43-403d-9f4f-231272ed28ec/original.json
+  sha256: c2acbd37eb1de517a15bc0750a37a339b14417a6a52d2d5a48c7cec77a3028e1
+transcript_file: transcript.md
+message_index_file: MESSAGES.yaml
+topic_map_file: TOPIC_MAP.yaml
+topic_map_markdown_file: TOPIC_MAP.md
+timestamps:
+  original_started_at: '2026-01-05T14:00:00Z'
+  original_ended_at: '2026-01-05T14:05:00Z'
+  imported_at: '2026-11-09T20:05:21.821767+00:00'
+attachment_inventory:
+  expected_logical_attachments: 0
+  inventory_verification: verified
+  inventory_evidence:
+  - Fixture JSON has no attachments
+  registered_logical_attachment_ids: []
+counts:
+  total_messages: 3
+  role_totals:
+    user: 2
+    assistant: 1
+  user_turns: 2
+  attachments: 0
+  topics: 1
+states:
+  source_preservation: complete
+  native_completeness: complete
+  normalization: complete
+  attachment_preservation: complete
+  topic_indexing: complete
+  knowledge_reconciliation: complete
+  work_reconciliation: not_applicable
+state_reasons:
+  attachment_preservation: Authored original JSON and verified inventory contain zero
+    attachments.
+  native_completeness: Exact message identity, role, timestamp, source locator, text
+    checksum and complete authored fixture boundary verified against original JSON;
+    no claim about a real provider capture.
+  topic_indexing: All authored messages are covered by the Cedar and, where present,
+    unrelated-topic maps.
+  knowledge_reconciliation: Completed approved Cedar-only reconciliation to the linked
+    subject and preserved final/CURRENT. Other-topic review remains explicit in review
+    metadata.
+  work_reconciliation: No canonical WORK record is part of this approved Cedar knowledge
+    example. Other-topic material is retained in SOT for its own review scope.
+integrated_subject_ids:
+- 3818f1f1-ff07-42a6-8eca-577bbcecf21d
+integrated_work_item_ids: []
+capture_gaps: []
+last_processed_at: '2026-11-09T21:40:02.179038+00:00'
+archive_mode: integrated
+transcript_format: foundation_v1
+review:
+  status: reviewed
+  history:
+  - transcript_sha256: 128c777e32204ca473dd697e928f68387f7ac3f024ee7dc7f6865599ade095f5
+    message_ids:
+    - a6c0d15e-e1c8-44c9-b213-f7e7a1771775
+    - 16cedd42-e75f-4314-a69a-ded51b817530
+    - 62a3ba6d-b6c9-494f-a44b-f8db574dd804
+    completed_at: '2026-11-09T21:40:02.178174+00:00'
+    user_approval_evidence: 'Authored fictional approval: SOT 6944f5cd-1087-4f5d-8637-c68dd537a511
+      message a5eeb8eb-daac-4d4f-95f8-3db17f038ab0; corrected Cedar final/current
+      scope in FINAL_v001.md. This is fixture approval, not a real person''s approval.'
+    subject_ids:
+    - 3818f1f1-ff07-42a6-8eca-577bbcecf21d
+    work_item_ids: []
+    deferred_material: []
+  pending_message_ids: []

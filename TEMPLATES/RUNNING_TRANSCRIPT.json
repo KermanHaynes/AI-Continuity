@@ -1,0 +1,12 @@
+{
+  "capture_kind": "running_transcript",
+  "session_id": null,
+  "provider": null,
+  "environment": null,
+  "capture_started_at": null,
+  "capture_cutoff_at": null,
+  "timestamp_policy": "record available timestamps; null means unavailable",
+  "messages": [],
+  "gaps": [],
+  "coverage": {"accessible_message_count": null, "captured_message_count": 0, "verified_through_ordinal": null, "verification_method": null}
+}

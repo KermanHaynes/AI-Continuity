@@ -1,0 +1,29 @@
+schema_version: 1
+records:
+- id: 0a50b2ac-678c-49ab-8957-b2f4d09836c0
+  record_type: sot_export
+  path: SOT/EXPORTS/0a50b2ac-678c-49ab-8957-b2f4d09836c0/export.yaml
+- id: 10f08b20-5084-4d10-8c64-b246d51d6c7f
+  record_type: sot_export
+  path: SOT/EXPORTS/10f08b20-5084-4d10-8c64-b246d51d6c7f/export.yaml
+- id: 28a978fe-8b43-403d-9f4f-231272ed28ec
+  record_type: sot_export
+  path: SOT/EXPORTS/28a978fe-8b43-403d-9f4f-231272ed28ec/export.yaml
+- id: 3818f1f1-ff07-42a6-8eca-577bbcecf21d
+  record_type: knowledge_subject
+  path: KNOWLEDGE/cedar/subject.yaml
+- id: 6944f5cd-1087-4f5d-8637-c68dd537a511
+  record_type: sot_conversation
+  path: SOT/fictional/synthetic/2026/6944f5cd-1087-4f5d-8637-c68dd537a511/manifest.yaml
+- id: 96cc4b31-7b83-459c-8476-df281d1e7268
+  record_type: sot_export
+  path: SOT/EXPORTS/96cc4b31-7b83-459c-8476-df281d1e7268/export.yaml
+- id: a2a795e4-8458-4fe1-a9d7-e6541a1ceb30
+  record_type: sot_conversation
+  path: SOT/fictional/synthetic/2026/a2a795e4-8458-4fe1-a9d7-e6541a1ceb30/manifest.yaml
+- id: d55383ea-9b9c-418b-89eb-8abdb1903ca8
+  record_type: sot_conversation
+  path: SOT/fictional/synthetic/2026/d55383ea-9b9c-418b-89eb-8abdb1903ca8/manifest.yaml
+- id: fbffa9c3-4121-4c9b-b74d-745ffdf5af3d
+  record_type: sot_conversation
+  path: SOT/fictional/synthetic/2026/fbffa9c3-4121-4c9b-b74d-745ffdf5af3d/manifest.yaml

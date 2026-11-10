@@ -1,0 +1,33 @@
+{
+  "synthetic": true,
+  "native_conversation_id": "fictional-review",
+  "title": "Cedar narrative review",
+  "original_started_at": "2026-01-06T10:00:00Z",
+  "original_ended_at": "2026-01-06T10:04:00Z",
+  "messages": [
+    {
+      "native_message_id": "fictional-review-1",
+      "role": "user",
+      "original_timestamp": "2026-01-06T10:00:00Z",
+      "content": "The draft wrongly says I rejected all sensors. I rejected sensor-only control without a failure plan; sensor with fallback was deferred and then adopted. Keep that distinction and the original draft.",
+      "source_locator": "messages[0]",
+      "attachment_ids": []
+    },
+    {
+      "native_message_id": "fictional-review-2",
+      "role": "assistant",
+      "original_timestamp": "2026-01-06T10:02:00Z",
+      "content": "The final will preserve the original timer rationale, the deferred fallback proposal, the rejection of sensor-only operation and the later adoption. The draft will remain a separate file.",
+      "source_locator": "messages[1]",
+      "attachment_ids": []
+    },
+    {
+      "native_message_id": "fictional-review-3",
+      "role": "user",
+      "original_timestamp": "2026-01-06T10:04:00Z",
+      "content": "I approve the corrected final narrative for this fictional example. Use a concise CURRENT with links to the complete evolution and final narrative; preserve the draft.",
+      "source_locator": "messages[2]",
+      "attachment_ids": []
+    }
+  ]
+}

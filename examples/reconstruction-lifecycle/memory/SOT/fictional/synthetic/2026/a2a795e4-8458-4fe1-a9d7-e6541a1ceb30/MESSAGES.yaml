@@ -1,0 +1,37 @@
+record_type: message_index
+schema_version: 1
+sot_id: a2a795e4-8458-4fe1-a9d7-e6541a1ceb30
+messages:
+- message_id: 5e614a88-602e-4f09-ba69-8c6fb05ed3f4
+  native_message_id: fictional-c1-1
+  ordinal: 1
+  role: user
+  original_timestamp: '2026-01-01T09:00:00Z'
+  export_id: 0a50b2ac-678c-49ab-8957-b2f4d09836c0
+  source_locator: messages[0]
+  content_sha256: 2bd5ce4ac6d4563592dec83a9718012c5b152cc26d91f64beee5e38093d57828
+  anchor: msg-5e614a88-602e-4f09-ba69-8c6fb05ed3f4
+  attachment_ids: []
+  limitations: []
+- message_id: 5390b3af-8d52-428a-9af2-31976e56d625
+  native_message_id: fictional-c1-2
+  ordinal: 2
+  role: assistant
+  original_timestamp: '2026-01-02T10:00:00Z'
+  export_id: 0a50b2ac-678c-49ab-8957-b2f4d09836c0
+  source_locator: messages[1]
+  content_sha256: 3a276da30043f4acb07e5b9f0b4cf4429326cf24fed678f1b3255aa2eb93f6b6
+  anchor: msg-5390b3af-8d52-428a-9af2-31976e56d625
+  attachment_ids: []
+  limitations: []
+- message_id: c55b1699-71e1-4232-b514-d3c0aac2455c
+  native_message_id: fictional-c1-3
+  ordinal: 3
+  role: user
+  original_timestamp: '2026-01-03T11:00:00Z'
+  export_id: 0a50b2ac-678c-49ab-8957-b2f4d09836c0
+  source_locator: messages[2]
+  content_sha256: 0c0d9bef58b0a7e698249911d79c53a789af8509cd0c02b2b997da9e91ecf2ab
+  anchor: msg-c55b1699-71e1-4232-b514-d3c0aac2455c
+  attachment_ids: []
+  limitations: []

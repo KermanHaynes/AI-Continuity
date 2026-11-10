@@ -1,0 +1,146 @@
+record_type: knowledge_subject
+schema_version: 1
+subject_id: 3818f1f1-ff07-42a6-8eca-577bbcecf21d
+canonical_name: Cedar courtyard irrigation
+aliases: []
+classifications: []
+scope: Fictional decision history for a small courtyard irrigation controller
+exclusions: []
+status: active
+related_subject_ids: []
+source_refs:
+- &id001
+  sot_id: a2a795e4-8458-4fe1-a9d7-e6541a1ceb30
+  message_ids:
+  - 5e614a88-602e-4f09-ba69-8c6fb05ed3f4
+- &id002
+  sot_id: a2a795e4-8458-4fe1-a9d7-e6541a1ceb30
+  message_ids:
+  - 5390b3af-8d52-428a-9af2-31976e56d625
+- &id003
+  sot_id: a2a795e4-8458-4fe1-a9d7-e6541a1ceb30
+  message_ids:
+  - c55b1699-71e1-4232-b514-d3c0aac2455c
+- &id004
+  sot_id: fbffa9c3-4121-4c9b-b74d-745ffdf5af3d
+  message_ids:
+  - 9568f2c2-fd62-4ab5-ba9d-9fa38ab4dd72
+- &id005
+  sot_id: fbffa9c3-4121-4c9b-b74d-745ffdf5af3d
+  message_ids:
+  - 14c5db94-57f7-4ce2-b611-657a97b4fdca
+- &id006
+  sot_id: fbffa9c3-4121-4c9b-b74d-745ffdf5af3d
+  message_ids:
+  - a6ceba57-8f68-4b3d-8044-d12782660db6
+- &id007
+  sot_id: d55383ea-9b9c-418b-89eb-8abdb1903ca8
+  message_ids:
+  - a6c0d15e-e1c8-44c9-b213-f7e7a1771775
+- &id008
+  sot_id: d55383ea-9b9c-418b-89eb-8abdb1903ca8
+  message_ids:
+  - 16cedd42-e75f-4314-a69a-ded51b817530
+- &id009
+  sot_id: d55383ea-9b9c-418b-89eb-8abdb1903ca8
+  message_ids:
+  - 62a3ba6d-b6c9-494f-a44b-f8db574dd804
+- &id010
+  sot_id: 6944f5cd-1087-4f5d-8637-c68dd537a511
+  message_ids:
+  - f4ab102e-ad25-4b23-b59d-5a9a1befb578
+- &id011
+  sot_id: 6944f5cd-1087-4f5d-8637-c68dd537a511
+  message_ids:
+  - 986c8b03-9329-4e50-bdd7-56961038789f
+- &id012
+  sot_id: 6944f5cd-1087-4f5d-8637-c68dd537a511
+  message_ids:
+  - a5eeb8eb-daac-4d4f-95f8-3db17f038ab0
+created_at: '2026-11-09T20:05:21.430515+00:00'
+updated_at: '2026-11-09T21:40:02.184136+00:00'
+last_evidence_reviewed_at: '2026-11-09T21:40:02.184132+00:00'
+integration_state: complete
+contributions:
+- occurred_at: '2026-01-01T09:00:00Z'
+  classification: established_user_position
+  description: Add bread and compost to the errands list. The Cedar courtyard watering
+    plan also needs a simple first trial.
+  source_refs:
+  - *id001
+- occurred_at: '2026-01-02T10:00:00Z'
+  classification: model_suggestion
+  description: A fixed timer is predictable. A soil sensor may respond to weather,
+    but sensor-only control needs a defined failure response.
+  source_refs:
+  - *id002
+- occurred_at: '2026-01-03T11:00:00Z'
+  classification: established_user_position
+  description: Use the fixed timer initially because its behavior is predictable.
+    Defer a sensor with fallback until we examine faults. Reject sensor-only operation
+    without a failure plan.
+  source_refs:
+  - *id003
+- occurred_at: '2026-01-04T08:02:00Z'
+  classification: model_suggestion
+  description: 'Record the brake adjustment before the next ride.
+
+
+    For the unrelated Cedar courtyard plan, a sensor with a timer fallback could retain
+    predictable behavior when readings fail. This is an option to examine, not an
+    accepted decision.'
+  source_refs:
+  - *id004
+- occurred_at: '2026-01-04T08:04:00Z'
+  classification: established_user_position
+  description: The brake adjustment is on my list. Rain also showed why Cedar timer-only
+    watering can waste water. Investigate the sensor-plus-fallback proposal; do not
+    adopt it yet.
+  source_refs:
+  - *id005
+- occurred_at: '2026-01-04T08:06:00Z'
+  classification: model_suggestion
+  description: The open Cedar question is what happens when a reading is absent. Sensor-only
+    control is still outside the accepted plan.
+  source_refs:
+  - *id006
+- occurred_at: '2026-01-05T14:00:00Z'
+  classification: established_user_position
+  description: In this fictional trial, a missing sensor reading could be handled
+    by the timer fallback instead of an undefined response.
+  source_refs:
+  - *id007
+- occurred_at: '2026-01-05T14:02:00Z'
+  classification: model_suggestion
+  description: That preserves the reason for predictability while allowing valid readings
+    to adjust watering. An adaptive forecast schedule could be explored separately.
+  source_refs:
+  - *id008
+- occurred_at: '2026-01-05T14:05:00Z'
+  classification: established_user_position
+  description: Adopt sensor control with the fixed-timer fallback. It addresses rain
+    and missing readings while preserving predictable fault behavior. Supersede timer-only
+    operation, keep sensor-only rejected, and leave adaptive forecast scheduling deferred.
+  source_refs:
+  - *id009
+- occurred_at: '2026-01-06T10:00:00Z'
+  classification: established_user_position
+  description: The draft wrongly says I rejected all sensors. I rejected sensor-only
+    control without a failure plan; sensor with fallback was deferred and then adopted.
+    Keep that distinction and the original draft.
+  source_refs:
+  - *id010
+- occurred_at: '2026-01-06T10:02:00Z'
+  classification: model_suggestion
+  description: The final will preserve the original timer rationale, the deferred
+    fallback proposal, the rejection of sensor-only operation and the later adoption.
+    The draft will remain a separate file.
+  source_refs:
+  - *id011
+- occurred_at: '2026-01-06T10:04:00Z'
+  classification: established_user_position
+  description: I approve the corrected final narrative for this fictional example.
+    Use a concise CURRENT with links to the complete evolution and final narrative;
+    preserve the draft.
+  source_refs:
+  - *id012

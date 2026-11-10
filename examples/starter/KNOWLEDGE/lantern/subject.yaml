@@ -1,0 +1,89 @@
+record_type: knowledge_subject
+schema_version: 1
+subject_id: c381204c-cac2-44a8-a72b-84f309fffbf9
+canonical_name: Fictional lantern controller
+aliases: []
+classifications: []
+scope: Fictional control policy
+exclusions: []
+status: provisional
+related_subject_ids: []
+source_refs:
+- &id003
+  sot_id: c2b4a597-81e9-416d-92a2-1296f4eed493
+  message_ids:
+  - f09674d7-5a51-4d8a-9606-493ab88e4f5d
+- &id001
+  sot_id: c2b4a597-81e9-416d-92a2-1296f4eed493
+  message_ids:
+  - 875e5c49-ecdf-4120-bd10-8322c590314b
+- &id002
+  sot_id: c2b4a597-81e9-416d-92a2-1296f4eed493
+  message_ids:
+  - 04ddd721-b3ab-4c92-99b3-5acc291cd2ab
+- &id006
+  sot_id: ab892e5b-d07c-4f40-b43e-3197e97a5595
+  message_ids:
+  - 440b29cd-867c-40fd-b251-75d7c8df2352
+- &id004
+  sot_id: ab892e5b-d07c-4f40-b43e-3197e97a5595
+  message_ids:
+  - 09cca283-1589-4cb6-a36e-d3be8df6e765
+- &id005
+  sot_id: ab892e5b-d07c-4f40-b43e-3197e97a5595
+  message_ids:
+  - 4c925b30-05e1-41d1-8ddb-cc400f0f2d10
+created_at: '2026-11-09T16:31:27.085924+00:00'
+updated_at: '2026-11-09T16:31:32.417896+00:00'
+last_evidence_reviewed_at: null
+integration_state: pending
+contributions:
+- occurred_at: '2026-01-01'
+  classification: model_suggestion
+  description: A sensor might adapt to changing light; a timer is simpler.
+  source_refs:
+  - *id001
+- occurred_at: '2026-01-01'
+  classification: established_user_position
+  description: Choose the fixed timer initially because its operation is predictable.
+    Reject sensor-only control until its failure behavior is reviewed.
+  source_refs:
+  - *id002
+- occurred_at: '2026-01-01'
+  classification: rejected_or_superseded
+  description: Choose the fixed timer initially because its operation is predictable.
+    Reject sensor-only control until its failure behavior is reviewed.
+  source_refs:
+  - sot_id: c2b4a597-81e9-416d-92a2-1296f4eed493
+    message_ids:
+    - 04ddd721-b3ab-4c92-99b3-5acc291cd2ab
+- occurred_at: '2026-01-01'
+  classification: user_proposal
+  description: Consider a fixed timer and a sensor for the fictional lantern.
+  source_refs:
+  - *id003
+- occurred_at: '2026-01-02'
+  classification: model_suggestion
+  description: A future adaptive schedule is another possible approach.
+  source_refs:
+  - *id004
+- occurred_at: '2026-01-02'
+  classification: unresolved_interpretation
+  description: Keep the adaptive schedule unresolved. Start documenting the fallback
+    procedure.
+  source_refs:
+  - *id005
+- occurred_at: '2026-01-02'
+  classification: established_user_position
+  description: 'Revise the decision: use a sensor with a timer fallback because the
+    fallback preserves predictable operation. The timer-only decision is superseded.'
+  source_refs:
+  - *id006
+- occurred_at: '2026-01-02'
+  classification: rejected_or_superseded
+  description: 'Revise the decision: use a sensor with a timer fallback because the
+    fallback preserves predictable operation. The timer-only decision is superseded.'
+  source_refs:
+  - sot_id: ab892e5b-d07c-4f40-b43e-3197e97a5595
+    message_ids:
+    - 440b29cd-867c-40fd-b251-75d7c8df2352
